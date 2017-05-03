@@ -1,46 +1,68 @@
-var circle1 = {
-    x: 0
-    , y: 500
-    , speedx: 2
-    , speedy: 4
-};
-var col = {
-    r: 255
-    , g: 0
-    , b: 0
-};
-
+var bubbles = [];
 
 function setup() {
-var myCanvas = createCanvas(innerWidth, 500);
-myCanvas.parent('p5sketch');
-    
-background(0);
+createCanvas(innerWidth, innerHeight);
+for (var i = 0; i < 20; i++){
+bubbles[i] = new Bubble(random(width),random(height));
+    }
 }
 
 function draw() {
-    col.r = random(100, 255);
-    col.g = 0;
-    col.b = random(100, 190);
-    fill(col.r, col.g, col.b, 100);
-    circle1.x = circle1.x + circle1.speedx;
-    circle1.y = circle1.y - circle1.speedy;
-    if (circle1.y < 0) {
-        circle1.speedy = -3;
-    }
-    else if (circle1.y > 500) {
-        circle1.speedy = 4
-    }
-    if (circle1.x > 1000) {
-        circle1.speedx = -2
-    }
-    else if (circle1.x < 1) {
-        circle1.speedx = 2
-    }
-    if (circle1.x > 400) {
-        rect(circle1.x, circle1.y, 100, 100)
-    }
-    else {
-        ellipse(circle1.x, circle1.y, 100, 100);
+    background(0);
+    for (var i = 0; i < bubbles.length; i++) {
+    bubbles[i].display();
+    bubbles[i].update();
+    for (var j = 0; j <bubbles.length; j++) {
+    if (i != j && bubbles[i].intersects(bubbles[j])) {
+        bubbles[i].changeColor();
+        bubbles[i].bounce();
+        bubbles[j].changeColor();
+        }
+}
+    
     }
 }
+
+function Bubble(x, y) {
+    this.x = x;
+    this.y = y;
+    this.r = 12;
+    this.speedx =3;
+    this.speedy=3;
+    this.col = color(255, 100);
+    this.changeColor = function () {
+        this.col = color(random(255), random(255), random(255), 150)
+    }
+    this.display = function () {
+        noStroke();
+        fill(this.col);
+        ellipse(this.x, this.y, this.r * 2, this.r * 2);
+    }
+    this.intersects = function (other) {
+        var d = dist(this.x, this.y, other.x, other.y);
+        if (d < this.r + other.r) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    this.update = function () {
+        this.x = this.x + this.speedx;
+        this.y = this.y + this.speedy;
+        if (this.y>=innerHeight|| this.x>=innerWidth){
+            this.speedx = this.speedx *-1;
+            this.speedy=this.speedy *-1;
+            
+        } else if (this.y<=0 || this.x<=0){
+            this.speedx =this.speedx *-1;
+            this.speedy=this.speedy *-1;
+        }
+    
+            }
+    this.bounce = function(){
+    this.speedx =this.speedx *-1;
+        
+    }
+        }
+
