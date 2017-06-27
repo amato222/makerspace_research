@@ -2,38 +2,88 @@
 <html lang="en">
 
 <head>
-    <title>StorySketching</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <title>StorySketching</title>
+    <meta name="description" content="">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Karma" rel="stylesheet">
+    <script id="sketch" src="sketch.js"></script>
 </head>
     <style>
-    p{font-family: sans-serif; font-size: 12px;
-    </style>
+        
+</style>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header"> <a class="navbar-brand" href="#">Story Sketching</a> </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Algorithmic Art</a></li>
-                <li><a href="index2.html">Making Sessions</a></li>
-                <li><a href="index9.html">Co-Constructions</a></li>
-                <li><a href="index14.html">Sculpture as Making</a></li>
-            </ul>
+     <header>
+    <nav class="navbar fixed-top navbar-inverse navbar-toggleable-sm">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="toggle navigation"> 
+            <span class="navbar-toggler-icon"></span> </button>
+        
+        <div class="container">
+            <div class="collapse navbar-collapse" id="collapse">
+                <div class="navbar-nav mr-auto">  
+                 <div class="dropdown"> 
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Algorithmic Art</a>
+                     <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item active" href="index.html">Role Relationships</a>
+                     </div>
+                     </div>
+                
+                <div class="dropdown"> 
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Making Sessions</a> 
+                <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item" href="index2.html">Personal Projects</a>
+                     </div>
+                         </div>
+                
+                <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="index9.html">Co-Constructions</a>
+                    <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item" href="index9.html">Role Exchange in Collaborations</a>
+                     </div>
+                 </div>
+                
+                <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Sculpture as Making</a>
+                    <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item " href="index14.html">Models of Systems</a>
+                     </div>
+                </div>
+                 </div>
+                </div>
+            
+        <a class="navbar-brand" href="about the author"> StorySketching </a> 
         </div>
     </nav>
-    <div id = "p5sketch"></div>
+   </header>
+    <main> 
+        <H1>Role Exchanges Can Generate Innovative Action Paths and Develop New Perspectives </H1>
+        <p class="lead"> In group work, participants may maintain a consistent role or they may exchange roles during interactions. As interactions increase, perspective-taking increases, new action paths emerge, and the chance of role exchange increases. </p>
+    <button class ="btn btn-primary active" onclick="setup()">Play </button> 
+        <button class ="btn btn-primary active" onclick="reset()">Reset </button> 
+     
+        </main>
+
+    <!--<footer> 
+    <ul> 
+        <li> <a href = "#"> References</a></li>
+        <li> <a href = "#"> Contact</a></li>
+        </ul>
+    </footer>
+<a class="btn btn-primary active mr-3 ml-5 mb-4" href="#" role="button"> Refresh</a>-->
+    </body>
+      
     
-<p><b>Stories in Progress.</b> A Change in Roles Can Send You Off in New Directions and Color Your Perspective in Unexpected Ways. </p>
-   
-</body>
-<script src="sketch.js"></script>
+  
 </html>

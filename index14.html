@@ -4,232 +4,291 @@
 <head>
     <title>StorySketching</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" type="text/css" href="css/reset.css">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Karma" rel="stylesheet">
     
 </head>
     <style>
-    p{font-family: sans-serif; font-size: 12px;
+        
     </style>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header"> <a class="navbar-brand" href="#">Story Sketching</a> </div>
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Algorithmic Art</a></li>
-                <li><a href="index2.html">Making Sessions</a></li>
-                <li><a href="index9.html">Co-Constructions</a></li>
-                <li class="active"><a href="index14.html">Sculpture as Making</a></li>
-            </ul>
-        </div>
-    </nav>
+    <nav class="navbar fixed-top navbar-inverse navbar-toggleable-sm">
+        <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target= "collapse">
+        <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+            
+            
+            <div class="navbar-nav mr-auto">  
+                 <div class="dropdown"> 
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Algorithmic Art</a>
+                     <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item" href="index.html">Role Relationships</a>
+                     </div>
+                     </div>
+                
+                <div class="dropdown"> 
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Making Sessions</a> 
+                <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item" href="index2.html">Personal Projects</a>
+                     </div>
+                         </div>
+                
+                <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="index9.html">Co-Constructions</a>
+                    <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item" href="index9.html">Role Exchange in Collaborations</a>
+                     </div>
+                 </div>
+                
+                <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Sculpture as Making</a>
+                    <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item active" href="index14.html">Models of Systems</a>
+                     </div>
+                </div>
+                 </div>
+                
+                </div>
+            
+                <a class="navbar-brand" href="about the author">StorySketching</a>
+    
+             
+            </div>
+            </nav>
+
+    <div class="container">
     <div class="row">
-  <div class="col-sm-4">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
-    <div class="item active">
-      <img src="assets/IMG_0053.jpg" class="img-responsive" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Perspective-Exchange</h3>
-        <p>Angled Perspective</p>
-      </div>
-    </div>
-
-
-    <div class="item">
-      <img src="assets/IMG_0055.jpg" class="img-responsive" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Perspective-Exchange</h3>
-        <p>Close-up on internal color</p>
-      </div>
-    </div>
-      
-<div class="item">
-      <img src="assets/IMG_0058.jpg" class="img-responsive" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Shadow Systems</h3>
-        <p></p>
-      </div>
-    </div>
-      
-      <div class="item">
-      <img src="assets/IMG_0056.jpg" class="img-responsive" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Chaos and Harmony</h3>
-        <p>Close-up of untraditional embroidery</p>
-      </div>
-    </div>
-
-
-      <div class="item">
-      <img src="assets/IMG_0057.jpg" class="img-responsive" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Inspiration</h3>
-        <p>Matthew Shlian: Mechanical Movement</p>
-      </div>
-        </div>
-      
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
         
-<div class="col-sm-4">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
+<!--carousel begins-->
+  <section class="col-sm-4">
+  <div class="carousel slide" id="carousel-1" data-ride="carousel">
+   <!-- Indicators --> 
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
+    <li data-target="#myCarousel" data-slide-to="0" class="active">
+    <li data-target="#carousel-1" data-slide-to="1">
+    <li data-target="#carousel-1" data-slide-to="2">
+    <li data-target="#carousel-1" data-slide-to="3">
+    <li data-target="#carousel-1" data-slide-to="4">
+  </ol>  
+      
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    
-      <div class="item active">
-      <img src="assets/IMG_0054.jpg" class="img-responsive" alt="Chania">
+
+    <div class="carousel-item active">
+      <img class ="d=block img-fluid" src="assets/IMG_0053-sized.jpg" alt="0">
       <div class="carousel-caption">
-        <h3>Perspective-Exchange</h3>
-        <p>Closeup on developing, evolving roles</p>
-      </div>
-    </div>
-      
-           <div class="item">
-      <img src="assets/IMG_0050.jpg" class="img-responsive" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Perspective-Exchange</h3>
-        <p>Gluing together pieces</p>
-      </div>
-    </div>
-      
-      <div class="item">
-      <img src="assets/light_fixture_3.gif" class="img-responsive" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Shadow Systems</h3>
-        <p>Dark perspectives</p>
-      </div>
-    </div>
-      
-      <div class="item">
-      <img src="assets/IMG_0048.jpg" class="img-responsive" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Chaos and Harmony</h3>
-        <p>A progression</p>
+        <caption-title>Perspective-Exchange.</caption-title>
+        <caption-text>Angled Perspective</caption-text>
       </div>
     </div>
 
-    <div class="item">
-      <img src="assets/IMG_0046.jpg" class="img-responsive" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Inspiration</h3>
-        <p><b>Tara Donovan:</b>Reminds me of sculpted sound waves </p>
+
+    <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0055-sized.jpg" alt="1">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Perspective-Exchange.</caption-title>
+        <caption-text>Close-up on internal color</caption-text>
+      </div>
+    </div>
+      
+<div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0058-sized.jpg" alt="2">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Shadow Systems.</caption-title>
+      </div>
+    </div>
+      
+      <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0056-sized.jpg"  alt="3">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Chaos and Harmony.</caption-title>
+        <caption-text>Close-up of untraditional</caption-text>
+      </div>
+    </div>
+
+
+      <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0057-sized.jpg"  alt="4">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Inspiration.</caption-title>
+        <caption-text>Matthew Shlian: Mechanical Movement</caption-text>
       </div>
         </div>
-    </div>
+      
+    </div><!--carousel inner/ controls-->
+      <a class ="carousel-control-prev" href="#1" role="button" data-slide ="prev">
+      <span class ="carousel-control-prev-icon" aria-hidden="true">
+          </span>
+          <span class="sr-only">Previous</span>
+      </a>
+      
+      <a class ="carousel-control-next" href="#1" role="button" data-slide ="next">
+      <span class ="carousel-control-next-icon">
+          </span>
+      </a>
   </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<div class="col-sm-4">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      
+  <!--controls end -->
+  
+</section>
+        
+<!--second carousel--> 
+<section class="col-sm-4">
+  <div class="carousel slide" id="carousel-2" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-2" data-slide-to="1"></li>
+    <li data-target="#carousel-2" data-slide-to="2"></li>
+    <li data-target="#carousel-2" data-slide-to="3"></li>
+      <li data-target="#carousel-2" data-slide-to="4"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     
-       <div class="item active">
-      <img src="assets/IMG_0052.jpg" class="img-responsive" alt="Flower">
+      <div class="carousel-item active">
+      <img class ="d=block img-fluid" src="assets/IMG_0054-sized.jpg" alt="0">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Perspective-Exchange.</caption-title>
+        <caption-text>Closeup on developing, evolving</caption-text>
+      </div>
+    </div>
+      
+           <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0050-sized.jpg" alt="1">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-text>Perspective-Exchange.</caption-text>
+        <caption-text>Gluing together pieces</caption-text>
+      </div>
+    </div>
+      
+      <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/light_fixture_3-sized.gif"  alt="2">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Shadow Systems.</caption-title>
+        <caption-text>Dark perspectives</caption-text>
+      </div>
+    </div>
+      
+      <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0048-sized.jpg"  alt="3">
       <div class="carousel-caption">
-        <h3>Perspective-Exchange</h3>
-        <p>Wall-mounted</p>
+        <caption-title>Chaos and Harmony.</caption-title>
+        <caption-text>A progression</caption-text>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0046-sized.jpg" alt="4">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Inspiration.</caption-title>
+        <caption-text>Tara Donovan:Reminds me of sculpted sound </caption-text>
+      </div>
+        </div>
+    </div>
+      <a class ="carousel-control-prev" href="#2" role="button" data-slide ="prev">
+      <span class ="carousel-control-prev-icon" aria-hidden="true">
+          </span>
+          <span class="sr-only">Previous</span>
+      </a>
+      
+      <a class ="carousel-control-next" href="carousel-2" role="button" data-slide ="next">
+      <span class ="carousel-control-next-icon">
+          </span>
+      </a>
+  </div>
+  <!--controls end -->
+</section>
+        
+  <!--third carousel-->      
+<section class="col-sm-4">
+  <div class="carousel slide" id="carousel-3" data-ride="carousel">
+      
+  <!-- Indicators--> 
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-3" data-slide-to="1"></li>
+    <li data-target="#carousel-3" data-slide-to="2"></li>
+    <li data-target="#carousel-3" data-slide-to="3"></li>
+      <li data-target="#carousel-3" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    
+       <div class="carousel-item active">
+      <img class ="d=block img-fluid" src="assets/IMG_0052-sized.jpg"  alt="0">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Perspective-Exchange.</caption-title>
+        <caption-text>Wall-mounted</caption-text>
       </div>
         </div>
       
-         <div class="item">
-      <img src="assets/IMG_0051.jpg" class="img-responsive" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Perspective-Exchange</h3>
-        <p>Imagining how the trees connect</p>
+         <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0051-sized.jpg"  alt="1">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Perspective-Exchange.</caption-title>
+        <caption-text>Imagining how the trees connect</caption-text>
       </div>
     </div>
        
       
-      <div class="item">
-      <img src="assets/light_fixture_7.gif" class="img-responsive" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Shadow Systems</h3>
-        <p>Moving shadows</p>
+      <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/light_fixture_7-sized.gif"  alt="2">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Shadow Systems.</caption-title>
+        <caption-text>Moving shadows</caption-text>
       </div>
     </div>
       
-      <div class="item">
-      <img src="assets/IMG_0047.jpg" class="img-responsive" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Chaos and Harmony</h3>
-        <p>Mold-making process</p>
+      <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0047-sized.jpg"  alt="3">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Chaos and Harmony.</caption-title>
+        <caption-text>Mold-making process</caption-text>
       </div>
     </div>
       
       
-        <div class="item">
-      <img src="assets/IMG_0049.jpg" class="img-responsive" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Suspend and Continue</h3>
-        <p>Quickfire mini project</p>
+        <div class="carousel-item">
+      <img class ="d=block img-fluid" src="assets/IMG_0049-sized.jpg" alt="4">
+      <div class="carousel-caption d-none d-md-block">
+        <caption-title>Suspend and Continue.</caption-title>
+        <caption-text>Quickfire mini project</caption-text>
       </div>
     </div>
 
     
     </div>
+      <a class ="carousel-control-prev" href="#1" role="button" data-slide ="prev">
+      <span class ="carousel-control-prev-icon" aria-hidden="true">
+          </span>
+          <span class="sr-only">Previous</span>
+      </a>
+      
+      <a class ="carousel-control-next" href="#1" role="button" data-slide ="next">
+      <span class ="carousel-control-next-icon">
+          </span>
+      </a>
   </div>
+  <!--controls end -->
 
-  <!-- Left and right controls -->
+  <!-- Left and right controls 
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -238,7 +297,9 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>          
+-->
+</section>          
+</div>
 </div>
 </body>
 </html>

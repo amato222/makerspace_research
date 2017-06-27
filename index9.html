@@ -2,48 +2,84 @@
 <html lang="en">
 
 <head>
-    <title>NewMedia</title>
+    <title>StorySketching</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+     <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.js"></script>
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Karma" rel="stylesheet">
+    <script src="sketch9.js"></script>
 </head>
 <style>
-    p{font-family: sans-serif; font-size: 12px;
     </style>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header"> <a class="navbar-brand" href="#">Story Sketching</a> </div>
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Algorithmic Art</a></li>
-                <li><a href="index2.html">Data Visualization</a></li>
-                <li class="active"><a href="index9.html">Co-Constructions</a></li>
-                <li><a href="index14.html">Sculpture as Making</a></li>
-            </ul>
+   <nav class="navbar fixed-top navbar-inverse navbar-toggleable-sm">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="toggle navigation"> 
+            <span class="navbar-toggler-icon"></span> </button>
+        
+        <div class="container">
+            <div class="collapse navbar-collapse" id="collapse">
+                <div class="navbar-nav mr-auto">  
+                 <div class="dropdown"> 
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Algorithmic Art</a>
+                     <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item " href="index.html">Role Relationships</a>
+                     </div>
+                     </div>
+                
+                <div class="dropdown"> 
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Making Sessions</a> 
+                <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item" href="index2.html">Personal Projects</a>
+                     </div>
+                         </div>
+                
+                <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="index9.html">Co-Constructions</a>
+                    <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item active" href="index9.html">Role Exchange in Collaborations</a>
+                     </div>
+                 </div>
+                
+                <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Sculpture as Making</a>
+                    <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item " href="index14.html">Models of Systems</a>
+                     </div>
+                </div>
+                 </div>
+                </div>
+            
+        <a class="navbar-brand" href="about the author"> StorySketching <img src="assets/IMG_0052.jpg" > </a> 
         </div>
     </nav>
-    
-    <div class="container-fluid">
-    <div class="row">
-  <div class="col-sm-4">
-    
-<p><b>Co-Constructing Novel Perspectives.</b> Grow a different tree each time you interact, based on rhythms of the music, when you press the button, and other built-in random variables. The trees model the actor-audience roles that people take up as they engage in creative work. The developing network of action is dynamic, influenced by rhythms of perspective exchange between multiple projects. Finally, when two networks  collide, as in role exchange, novel action paths can emerge.</p> 
-<p><b>Inspiration.</b> I wanted to capture the dynamic nature of creative work, and the way that participating in multiple creative projects can increase perspective-taking and role exchange, and the opportunities of perspective-exchange in collaborations.</p>
-<p><b>Process:</b> My process involved reasearch into potential models to represent interaction as well as the complexity, chance, and structure involved in creative work. While the collision and change of elements affords a model of change and interaction, the L-systems were able to capture the network of roles that people co-construct.</p> 
-<p><b>Future Work:</b> I am interested in working with more organic forms of fractal trees, particularly those that are constructed from text-based patterns. I am also working on modeling a collision between the two tree branches. Finally, I would like to add a physical computing component or gestural component to the piece. </p>
-</div>
-</div>
-</div>
-<script src="sketch9.js"></script>
-
-       
+    <section class="container">
+        <H1>Co-Constructing Novel Perspectives </H1>
+        <p class="lead"> Model the effects of participation on potential patterns of maker-consumer role exchange in collaborative work.</p>
+        
+    <button class ="btn btn-primary active" onclick="startSong()">Play Song</button> 
+    <button class ="btn btn-primary " onclick="grow()">Grow Trees</button>
+    <button class ="btn btn-primary" onclick="reset()">Reset</button>
+    <button class ="btn btn-primary" onclick="changeSong()">Change Song</button>
+    <button class ="btn btn-primary" onclick="stopSong()">Stop Song</button>
+        
+<!-- <p><b>Inspiration.</b> I wanted to capture the dynamic nature of creative work, and the way that participating in multiple creative projects can increase perspective-taking and role exchange, and the opportunities of perspective-exchange in collaborations.</p>
+Future Work:</b> I am interested in working with more organic forms of fractal trees, particularly those that are constructed from text-based patterns. I am also working on modeling a collision between the two tree branches. Finally, I would like to add a physical computing component or gestural component to the piece. </p>-->
+        
+    </section>
+     
 </body>
+
 
 </html>

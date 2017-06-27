@@ -1,7 +1,8 @@
 var bubbles = [];
+var col= color(255, 100);
 
 function setup() {
-createCanvas(innerWidth, innerHeight);
+createCanvas(innerWidth, 500);
 for (var i = 0; i < 20; i++){
 bubbles[i] = new Bubble(random(width),random(height));
     }
@@ -22,6 +23,11 @@ function draw() {
     
     }
 }
+function reset() {
+bubbles.splice(0,20);
+}
+
+
 
 function Bubble(x, y) {
     this.x = x;
@@ -31,7 +37,7 @@ function Bubble(x, y) {
     this.speedy=3;
     this.col = color(255, 100);
     this.changeColor = function () {
-        this.col = color(random(255), random(255), random(255), 150)
+        this.col = color(random(255), random(255), random(255), 150);
     }
     this.display = function () {
         noStroke();
@@ -50,7 +56,7 @@ function Bubble(x, y) {
     this.update = function () {
         this.x = this.x + this.speedx;
         this.y = this.y + this.speedy;
-        if (this.y>=innerHeight|| this.x>=innerWidth){
+        if (this.y>=500|| this.x>=innerWidth){
             this.speedx = this.speedx *-1;
             this.speedy=this.speedy *-1;
             
@@ -64,5 +70,6 @@ function Bubble(x, y) {
     this.speedx =this.speedx *-1;
         
     }
-        }
+}
+
 
