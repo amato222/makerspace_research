@@ -67,3 +67,18 @@ caption-text {
 section {
     margin-top:20px;
 }
+aside {
+    background-color: rgba(209, 207, 202,.3);
+    padding: 10px;
+}
+aside h2 {
+    color:rgb(142, 139, 139);
+    padding-bottom: 5px;
+}
+#profilepic{
+   float:right;
+}
+p{
+    margin: 0px;
+    padding:0px:
+}
