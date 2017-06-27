@@ -7,6 +7,14 @@ h1,h2,h3 {
     font-family:'open sans', sans-serif;
     font-size: 30px
     font-style: 
+        
+}
+h4 {
+    font-family:'open sans', sans-serif;
+    font-size: 14px;
+    padding:5px;
+    color:floralwhite;
+    background-color:rgba(106, 96, 98, 0.8);
 }
 .navbar-brand {
     font-family: 'open sans', sans-serif;
@@ -28,6 +36,9 @@ figcaption {
     color:brown;
     font-size:10px;
     font-family: "open sans";
+}
+button {
+    margin:3px;
 }
 
  .carousel-item img {
@@ -51,5 +62,8 @@ caption-title {
 caption-text {
     font-family:'open sans', sans-serif;
     font-size: 8px;
-    
+
+}
+section {
+    margin-top:20px;
 }
