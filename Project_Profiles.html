@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MakerSpace Research</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Karma" rel="stylesheet"> </head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-inverse navbar-toggleable-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="container"> 
+                <a class="navbar-brand" href="homepage.html"> MakerSpace Research</a>
+            <div class="collapse navbar-collapse" id="collapse">
+                <div class="navbar-nav">  
+                 <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Program Profiles</a>
+                    <div class= "dropdown-menu"> 
+                     <a class ="dropdown-item " href="Project_Profiles.html">Projects</a>
+                        <a class ="dropdown-item " href="Participant_Profiles.html">Participants</a>
+                    
+                        <a class ="dropdown-item " href="School_Profiles.html">Schools</a>
+                     </div>
+                </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="role_development.html">Interactives </a>
+                            <div class="dropdown-menu"> <a class="dropdown-item" href="index9.html">Role Exchange in Collaborations</a> </div>
+                        </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Simulations</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item active" href="roleexchanges.html">Role Exchanges in Group Work</a> </div>
+                        </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Photos</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item " href="Photos.html">Models of Systems</a> </div>
+                        </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Participate</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item" href="Systems_reasoning.html">Inside the Making Process</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+         <div class="splash" class="container-flex"> 
+        <div class="carousel slide" id="carousel-1" data-ride="carousel" data-interval="20000">
+            
+    <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="carousel-item active">
+      <video autoplay id="splash" controls>
+            <source src="assets/making_2.mp4" type="video/mp4">
+            </video>
+        <div class="center"><span class="title"> Makerspace Projects</span></div>
+        <div class="subtitle"><span class="featured"> 3D Patterns </span></div>
+      </div>
+        
+    <div class="carousel-item">
+         <video id="splash" controls>
+            <source src="assets/making_1.mp4" type="video/mp4">
+            </video>
+        <div class="center"><span class="title"> Makerspace Projects</span></div>
+        <div class="subtitle"><span class="featured"> 3D Shapes </span></div>
+    </div>
+      
+      <div class="carousel-item">
+         <video id="splash" controls>
+            <source src="assets/splash_page_2.mp4" type="video/mp4">
+            </video>
+        <div class="center"><span class="title"> Makerspace Projects</span></div>
+        <div class="subtitle"><span class="featured"> Truss Bridge </span></div>
+          
+    </div>
+      
+      <div class="carousel-item" >
+         <video id="splash" controls>
+            <source src="assets/minum_code.mp4" type="video/mp4">
+            </video>
+        <div class="center"><span class="title"> Makerspace Projects</span></div>
+        <div class="subtitle"><span class="featured"> Musical Staircase</span></div>
+          
+    </div>
+      
+      </div>
+    </div>
+   
+    </div>
+       <div class="row">
+            <div class="col-md-8">
+        <figcaption><video-title>Projects aim to develop engineering skills and roles.</video-title> Traditional and digital technologies provide opportunities to develop systems reasoning skills, engage in perspective-taking, and prepare students for the 21st century workplace.</figcaption>
+           </div>
+            </div>
+           
+        <div class="row">
+            <div class="col-md-6">
+                <section class="cards">
+                    <aside> <img id="project_pic" src="assets/truss_bridge3.png">
+                        <h2>Project</h2>
+                        <h3> <span class="author"> Truss Bridge</span></h3>
+                        <dl><dt>Time</dt>
+                            <dd>4 weeks</dd> 
+                            <dt>Constraints</dt>
+                            <dd>Materials/Tools: Glue, cement glue, file folders, Exacto knives.</dd> 
+                            <dt>Learning Objectives</dt> 
+                            <ul>
+                            <li>Identify variables contributing to bridge strength  </li>
+                            <li>Reason about geometry and weight distribution</li> 
+                             <li>Read and interpret models and blueprints</li> 
+                            <li>Reason about multivariable systems</li>
+                            <li>Use mathematical reasoning to strategize and execute</li>
+                            <li>Use engineering language to collaborate</li>
+                            </ul>
+                            <dt>social Roles</dt> 
+                            <dd>Civil engineer</dd> 
+                            <dt>Collaborative Roles</dt>
+                            <dd>Planner, Problem-Solver, Project Manager, Evaluator </dd>
+                        </dl>
+                    </aside>
+                </section>
+            </div>
+                <div class="col-md-6">
+                <section class="cards">
+                    <aside> 
+                        <h2>Project </h2>
+                        <h3> <span class="author"> Musical Staircase </span></h3> 
+                         <dl><dt>Time</dt> 1 semester 
+                             <dt>Constraints</dt> No specific constraints.
+                         <dt>Learning Objectives</dt>
+                            <ul><li>Establish aesthetic, structural, and functional goals. </li>
+                             <li>Research, select, and request tools and materials.</li>
+                            <li>Learn to use Pi, Arduino, Processing, Minim, GarageBand</li>
+                            <li>Learn basic programming skills</li>
+                            <li>Build a circuit and construct causal explanation.</li>
+                            <li>Plan, simulate, and problem-solve with complex systems.</li>
+                            <li>Reason about multiple, interacting variables.</li>
+                            <dt>Social Roles</dt> <dd>  UX/IX designer, researcher, strategist; product designer, programmer, developer, artist, electrical engineer.</dd>
+                            <dt>Collaborative Roles</dt> <dd> Planner, Problem-Solver, Project Manager, Evaluator </dd>
+                              </ul></dl>
+    
+                    </aside>
+                </section>
+                </div>
+            </div>
+        
+</body>
+
+</html>
