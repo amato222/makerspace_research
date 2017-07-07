@@ -90,7 +90,7 @@ section aside {
     margin:20px;
 }
 aside {
-    background-color: rgba(209, 207, 202,.3);
+    background-color: rgba(240, 248, 255,.5);
     padding: 10px;
 }
 aside h2 {
@@ -126,7 +126,7 @@ height:60%;
     font-style:italic;
 }
 .studentprofile {
-    background-color: aliceblue;
+
 }
 .rating {
       float:right;
@@ -194,7 +194,7 @@ legend {
 .subtitle {
     position:absolute;
     left: 0;
-    top: 45%;
+    top: 50%;
     width: 100%;
     text-align: center;}
     
