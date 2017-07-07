@@ -183,6 +183,13 @@ legend {
     top: 35%;
     width: 100%;
     text-align: center;}
+ .center_school {
+    position:absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    text-align: center;}
+    }
 .title {
     font-family: 'Karma', sans-serif;;
     font-size: 60px;
