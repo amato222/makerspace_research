@@ -218,3 +218,14 @@ ul.navbar-nav {
     font-family:'open sans', sans-serif;
     font-size: 14px;
 }
+div.gallery {
+    margin: 1px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 210px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
