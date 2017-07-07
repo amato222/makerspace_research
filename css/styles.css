@@ -18,6 +18,13 @@ h4 {
     color:floralwhite;
     background-color:rgba(106, 96, 98, 0.8);
 }
+
+.div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
 .navbar-brand {
     font-family: 'open sans', sans-serif;
 }
@@ -203,4 +210,11 @@ legend {
 .cards {
         position:relative;
     }    
+}
+.sidenav {
+      background-color: #f1f1f1;
+    height: 100%}
+ul.navbar-nav {
+    font-family:'open sans', sans-serif;
+    font-size: 14px;
 }
