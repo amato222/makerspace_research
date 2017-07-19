@@ -183,15 +183,9 @@ legend {
     top: 35%;
     width: 100%;
     text-align: center;}
- .center_school {
-    position:absolute;
-    left: 0;
-    top: 15%;
-    width: 100%;
-    text-align: center;}
-    }
+    
 .title {
-    font-family: 'Karma', sans-serif;;
+    font-family: 'Karma', sans-serif;
     font-size: 60px;
     color:floralwhite;
     padding-left: 5px;
@@ -213,6 +207,7 @@ legend {
     padding-right: 5px;
     background-color: rgba(0,0,0,.5);
     }
+}
 
 .cards {
         position:relative;
@@ -237,4 +232,18 @@ div.gallery img {
     height: auto;
      z-index: -1;
     opacity: 0.7;
+}
+fieldset {
+    border:1px solid #aaaaaa;
+    padding: 5px;
+    background-color:rgba(217, 214, 214, 0.3);
+}
+legend {
+    font-family:'open sans', sans-serif;
+    font-size: 15px;
+}
+
+form {
+     font-family:'open sans', sans-serif;
+    font-size: 14px;
 }
