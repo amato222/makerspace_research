@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MakerSpace Research</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+   <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Karma" rel="stylesheet"> 
+<script src="tables.js"></script>
+       
+    
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-inverse navbar-toggleable-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="container"> <a class="navbar-brand active" href="homepage.html"> MakerSpace Research</a>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="navbar-nav">
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Program Profiles</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item " href="Project_Profiles.html">Projects</a> <a class="dropdown-item " href="Participant_Profiles.html">Participants</a> <a class="dropdown-item " href="School_Profiles.html">Schools</a> </div>
+                        </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="index9.html">Interactives </a>
+                            <div class="dropdown-menu"> <a class="dropdown-item" href="role_development.html">Role Exchange in Collaborations</a> </div>
+                        </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Simulations</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item" href="roleexchanges.html">Role Exchanges in Group Work</a> </div>
+                        </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Photos</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item " href="Photos.html">Models of Systems</a> </div>
+                        </div>
+                        <div class="dropdown"> <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Participate</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item" href="blog.html">Data from the Making Process</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+ <main class="container-fluid">
+<section id="actionlist"> </section>
+     
+    <!--<button> Action List</button>-->
+<table style="width:50%">
+    <img src="assets/participation.png">
+    <caption>Table 1. Development of Makers</caption>
+  <tr>
+    <th>Participant</th>
+    <th> Actor</th>
+    <th> Audience</th>
+    <th> Total </th>
+  </tr>
+
+    <tr><td>P01</td>
+    <td id="acta"></td>
+    <td id="auda"></td> 
+    <td id="u"></td></tr>
+    
+    <tr><td>P2</td>
+    <td id="actb"></td>
+    <td id="audb"></td> 
+    <td id="v"></td></tr>
+         
+      <tr> <td>P3</td>
+    <td id="actc"></td>
+    <td id="audc"></td> 
+    <td id="w"></td></tr>
+         
+       <tr><td>P4</td>
+    <td id="actd"></td>
+    <td id="audd"></td> 
+    <td id="x"></td></tr>
+         
+       <tr><td>P5</td>
+    <td id="acte"></td>
+    <td id="aude"></td> 
+    <td id="y"></td></tr>
+         
+       <tr><td>P6</td>
+    <td id="actf"></td>
+    <td id="audf"></td> 
+    <td id="z"></td></tr>
+         
+           <tr><td>P7</td>
+    <td id="actg"></td>
+    <td id="audg"></td> 
+    <td id="zz"></td></tr>
+        
+            <tr><td>P8</td>
+    <td id="acth"></td>
+    <td id="audh"></td> 
+    <td id="ab"></td></tr>
+         
+            <tr><td>P9</td>
+    <td id="acti"></td>
+    <td id="audi"></td> 
+    <td id="ac"></td></tr>
+         
+        <tr><td>P10</td>
+    <td id="actj"></td>
+    <td id="audj"></td> 
+    <td id="ad"></td></tr>
+    
+     <tr><td class="last">P11</td>
+    <td id="actk" class="last"></td>
+    <td id="audk" class="last"></td> 
+    <td id="ae" class="last"></td></tr>
+    
+      <tr><td>Total</td>
+    <td class="totalactor"></td>
+    <td class="totalaudience"></td> 
+    <td id="roles"></td></tr>   
+    
+     </table>
+<table style="width:50%">
+<caption>Table 2. Development of Teachers</caption>
+  <tr>
+    <th>Participant</th>
+    <th colspan="2"> Teacher</th>
+    <th colspan="2"> Student</th>
+    
+
+   
+  </tr>
+  <tr>
+    <td> </td>
+    <th>Actor</th>
+    <th>Audience</th>
+    <th>Actor</th>
+    <th>Audience</th>
+    
+      
+  </tr>
+  <tr>
+    <td>P10</td>
+    <td id="a"></td>
+    <td id="b"></td> 
+    <td id="c"></td>
+    <td id="d"></td>
+    
+    
+  </tr>
+    <tr>
+    <td>P2</td>
+    <td id="e"></td>
+    <td id="f"></td> 
+    <td id="g"></td>
+    <td id="h"></td>
+   
+    
+  </tr>
+         <tr>
+    <td>P4</td>
+    <td id=i></td>
+    <td id=j></td> 
+    <td id=k></td>
+    <td id=l></td>
+   
+    
+  </tr>
+    <tr>
+    <td>P5</td>
+    <td id="m"></td>
+    <td id="n"></td> 
+    <td id="o"></td>
+    <td id="p"></td>
+    
+   
+  </tr>
+<tr>
+    <td>P01</td>
+    <td id="aa"></td>
+    <td id="bb"></td> 
+    <td id="cc"></td>
+    <td id="dd"></td>
+    
+   
+  </tr>
+<tr>
+    <td>P3</td>
+    <td id="ee"></td>
+    <td id="ff"></td> 
+    <td id="gg"></td>
+    <td id="hh"></td>
+    
+   
+  </tr>
+<tr>
+    <td class="last">P6</td>
+    <td id="ii" class="last"></td>
+    <td id="jj" class="last"></td> 
+    <td id="kk" class="last"></td>
+    <td id="ll" class="last"></td>
+    
+   
+  </tr>
+      <tr>
+    <td>All P</td>
+    <td id="q"></td>
+    <td id="r"></td> 
+    <td id="s"></td>
+    <td id="t"></td>
+    
+   
+  </tr>
+</table>
+<table style="width:50%">
+<caption>Table 3. Development of Engineers</caption>
+  <tr>
+    <th>Participant</th>
+    <th colspan="2"> Novice</th>
+    <th colspan="2"> Expert</th>
+    <th colspan="2"> Engineer</th>
+    
+   
+  </tr>
+  <tr>
+    <td> </td>
+    <th>Actor</th>
+    <th>Audience</th>
+    <th>Actor</th>
+    <th>Audience</th>
+    <th>Actor</th>
+    <th>Audience</th>
+    
+      
+  </tr>
+  <tr>
+    <td>P1</td>
+    <td id="one_nov_act"></td>
+    <td id="one_nov_aud"></td> 
+    <td id="one_exp_act"></td>
+    <td id="one_exp_aud"></td>
+    <td id="one_eng_act"></td>
+    <td id="one_eng_aud"></td>
+    
+  </tr>
+    <tr>
+    <td>P2</td>
+    <td id="two_nov_act"></td>
+    <td id="two_nov_aud"></td> 
+    <td id="two_exp_act"></td>
+    <td id="two_exp_aud"></td>
+   <td id="two_eng_act"></td>
+    <td id="two_eng_aud"></td>
+    
+  </tr>
+         <tr>
+    <td>P3</td>
+    <td id="three_nov_act"></td>
+    <td id="three_nov_aud"></td> 
+    <td id="three_exp_act"></td>
+    <td id="three_exp_aud"></td>
+    <td id="three_eng_act"></td>
+    <td id="three_eng_aud"></td>
+    
+  </tr>
+    <tr>
+    <td>P4</td>
+    <td id="four_nov_act"></td>
+    <td id="four_nov_aud"></td> 
+    <td id="four_exp_act"></td>
+    <td id="four_exp_aud"></td>
+    <td id="four_eng_act"></td>
+    <td id="four_eng_aud"></td>
+   
+  </tr>
+<tr>
+    <td>P5</td>
+    <td id="five_nov_act"></td>
+    <td id="five_nov_aud"></td> 
+    <td id="five_exp_act"></td>
+    <td id="five_exp_aud"></td>
+    <td id="five_eng_act"></td>
+    <td id="five_eng_aud"></td>
+   
+  </tr>
+    <tr>
+    <td>P6</td>
+    <td id="six_nov_act"></td>
+    <td id="six_nov_aud"></td> 
+    <td id="six_exp_act"></td>
+    <td id="six_exp_aud"></td>
+   <td id="six_eng_act"></td>
+    <td id="six_eng_aud"></td>
+   
+  </tr>
+<tr>
+    <td class="last">P10</td>
+    <td id="ten_nov_act" class="last"></td>
+    <td id="ten_nov_aud" class="last"></td> 
+    <td id="ten_exp_act" class="last"></td>
+    <td id="ten_exp_aud" class="last"></td>
+     <td id="ten_eng_act" class="last"></td>
+    <td id="ten_eng_aud" class="last"></td>
+   
+  </tr>
+
+      <tr>
+    <td>All P</td>
+    <td id="nov_act"></td>
+    <td id="nov_aud"></td> 
+    <td id="exp_act"></td>
+    <td id="exp_aud"></td>
+   <td id="eng_act"></td>
+    <td id="eng_aud"></td>
+  </tr>
+</table>
+<table style="width:75%">
+<caption>Table 4. Collaborative Roles</caption>
+  <tr>
+    <th>Participant</th>
+    <th colspan="2"> Project Manager</th>
+    <th colspan="2"> Evaluator</th>
+    <th colspan="2"> Problem-Solver</th>
+    <th colspan="2"> Modeler</th>
+   <th colspan="2"> Collaborator</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <th>Actor</th>
+    <th>Audience</th>
+    <th>Actor</th>
+    <th>Audience</th>
+    <th>Actor</th>
+    <th>Audience</th>
+    <th>Actor</th>
+    <th>Audience</th>
+    <th>Actor</th>
+    <th>Audience</th>
+    
+      
+  </tr>
+  <tr>
+    <td>P1</td>
+    <td id="one_proj_act"></td>
+    <td id="one_proj_aud"></td> 
+    <td id="one_eval_act"></td>
+    <td id="one_eval_aud"></td>
+    <td id="one_probl_act"></td>
+    <td id="one_probl_aud"></td>
+    <td id="one_mod_act"></td>
+    <td id="one_mod_aud"></td>
+    <td id="one_collab_act"></td>
+    <td id="one_collab_aud"></td>
+  </tr>
+    <tr>
+    <td>P2</td>
+    <td id="two_proj_act"></td>
+    <td id="two_proj_aud"></td> 
+    <td id="two_eval_act"></td>
+    <td id="two_eval_aud"></td>
+   <td id="two_probl_act"></td>
+    <td id="two_probl_aud"></td>
+    <td id="two_mod_act"></td>
+    <td id="two_mod_aud"></td>
+    <td id="two_collab_act"></td>
+    <td id="two_collab_aud"></td>
+  </tr>
+         <tr>
+    <td>P3</td>
+    <td id="three_proj_act"></td>
+    <td id="three_proj_aud"></td> 
+    <td id="three_eval_act"></td>
+    <td id="three_eval_aud"></td>
+    <td id="three_probl_act"></td>
+    <td id="three_probl_aud"></td>
+    <td id="three_mod_act"></td>
+    <td id="three_mod_aud"></td>
+    <td id="three_collab_act"></td>
+    <td id="three_collab_aud"></td>
+  </tr>
+    <tr>
+    <td>P4</td>
+    <td id="four_proj_act"></td>
+    <td id="four_proj_aud"></td> 
+    <td id="four_eval_act"></td>
+    <td id="four_eval_aud"></td>
+    <td id="four_probl_act"></td>
+    <td id="four_probl_aud"></td>
+   <td id="four_mod_act"></td>
+    <td id="four_mod_aud"></td>
+    <td id="four_collab_act"></td>
+    <td id="four_collab_aud"></td>
+  </tr>
+<tr>
+    <td>P5</td>
+    <td id="five_proj_act"></td>
+    <td id="five_proj_aud"></td> 
+    <td id="five_eval_act"></td>
+    <td id="five_eval_aud"></td>
+    <td id="five_probl_act"></td>
+    <td id="five_probl_aud"></td>
+   <td id="five_mod_act"></td>
+    <td id="five_mod_aud"></td>
+    <td id="five_collab_act"></td>
+    <td id="five_collab_aud"></td>
+  </tr>
+    <tr>
+    <td>P6</td>
+    <td id="six_proj_act"></td>
+    <td id="six_proj_aud"></td> 
+    <td id="six_eval_act"></td>
+    <td id="six_eval_aud"></td>
+   <td id="six_probl_act"></td>
+    <td id="six_probl_aud"></td>
+   <td id="six_mod_act"></td>
+    <td id="six_mod_aud"></td>
+    <td id="six_collab_act"></td>
+    <td id="six_collab_aud"></td>
+  </tr>
+<tr>
+    <td class="last">P10</td>
+    <td id="ten_proj_act" class="last"></td>
+    <td id="ten_proj_aud" class="last"></td> 
+    <td id="ten_eval_act" class="last"></td>
+    <td id="ten_eval_aud" class="last"></td>
+     <td id="ten_probl_act" class="last"></td>
+    <td id="ten_probl_aud" class="last"></td>
+   <td id="ten_mod_act" class="last"></td>
+    <td id="ten_mod_aud" class="last"></td>
+    <td id="ten_collab_act" class="last"></td>
+    <td id="ten_collab_aud" class="last"></td>
+  </tr>
+
+      <tr>
+    <td>All P</td>
+    <td id="proj_act"></td>
+    <td id="proj_aud"></td> 
+    <td id="eval_act"></td>
+    <td id="eval_aud"></td>
+   <td id="probl_act"></td>
+    <td id="probl_aud"></td>
+    <td id="mod_act"></td>
+    <td id="mod_aud"></td>
+    <td id="collab_act"></td>
+    <td id="collab_aud"></td>
+  </tr>
+</table>
+    
+ 
+<section id="session_1"> 
+<dialogue> 
+<P10><role class="actor" class2="teacher"><explain class="first">“The reason you have to connect the top of the bridge together even though the bottom is attached,<simulate>is that if there is wind, what is going to happen is that the bridge is going to want to buckle this way.</simulate> But you don’t want a bridge to buckle.</explain></role></P10>
+           
+<P10><role class="actor"class2="teacher"><directive>Anna and Andy, just FYI I’m going over the questions that were due today if you want to take those out. </directive></role></P10>
+             
+<P10> <role class="actor"class2="teacher" class3="engineer">  <evaluation>So questions 3 and 4 were asking you about what the purpose of the <engineering>struts</engineering>,<engineering>lateral brancing</engineering>, and <engineering>portal bracing</engineering>.<explain class="second">And the top the bridge has to be connected so the bridge doesn’t buckle or bow or something. So the bracing on the top of the bridge is for <simulate>protection against wind blowing</simulate></explain></evaluation></role></P10>
+        
+<P10><role class="actor"class2="teacher"><explain>The portal bracing over here is also is designed to keep the bridge from <simulate>tipping over sideways because of things like wind or uneven loading of stuff on the bridge</simulate>.</explain><q>So why are truss bridges are less common today</q>—that was question 5. So I was thinking about a question Ryan asked way back in the beginning.</role></P10>
+<P9> <role class="actor" class2="student"><joke>who?</joke></role></P9>
+<P01><role class="actor" class2="student"><q>oh what did she ask?</q></role></P01>
+<P10><role class="actor"class2="teacher"><response>Who, Ryan!</response></role></P10>
+<p9><role class="actor" class2="student"><joke>it’s a joke.</joke></role></p9>
+<P10> <role class="actor"class2="teacher"><q><simulate>Its because we have these huge bridges in <application>new York</application> and on the interstates that go for really really long stretches without abutments or piers, how are they being supported without trusses</simulate>.</q></role></P10>
+<P10><role class="actor"class2="teacher" ><explanation>It’s because our beams are way better designed now, so we can have flat bridges, because the <keyconcept>quality of our materials</keyconcept> is way better.</explanation></role></P10>
+<Perspective2 class="perspective">
+<P2><role class="actor" class2="student"><response><evaluation class="self">oh that’s what I said.</evaluation> Uses a lot of materials which could be excessive.</response></role></P2>
+
+<P10><role class="actor"class2="teacher">  <explanation>The other thing has to do with the <keyconcept>cost of skilled labor</keyconcept> the more complicated assemblying a structure is the greater the cost of paying some construction team to do that work. So assemblying the earliest skyscrapers. I don’t know if you guys have seen those photos of workers eating lunch on a high beam and their like at the top of the empire state building.</explanation></role> </P10>
+<P2 class="perspective"><role class="actor"class2= "student"><response>oh yea.</response></role> </P2>
+<P10><role class="actor"class2="teacher"><application>So the reason we could afford to build these structures is because it was super cheap and we didn’t really have to think about paying these workers very much, which to I think unethical.<keyconcept>But now we do think about paying people a fare wage, I hope,</keyconcept> which is why now the cost of building a more complicated bridge is increases relative again to having a flat bridge.</application></role></P10>
+
+<P10><role class="actor"class2="teacher"><q>Which method of loading is better?</q><simulation><explanation>What this question is asking is when we are going to squish are bridge are we going squish our bridge from the top or hang a bucket on the bottom and pull down on it.</explanation></simulation></role></P10>
+        
+<p9><role class="actor" class2="student"><response>I would rather do the bottom.</response></role></p9>
+<P10>  <role class="actor"class2="teacher"><q class="followup">And why?</q></role></P10>
+<p9><role class="actor"><response class="second">Cause that’s where the weight’s gonna be. </response></role></p9>
+<P10><role class="actor"class2="teacher">:<evaluation>exactly.</evaluation><planning><explanation>So like loading it from the bottom is a more accurate way of demonstrating how this bridge were to be used if it were full sized.<keyconcept>But loading it on top, and this is something we are going to talk about later, will still be testing the same amount force on this bridge.</keyconcept> So when we test it were going to put our load on top just because it is easier than having something hanging from the bottom and the bridge will still be able to support it.</explanation></planning></role></P10>
+       
+<P10><role class="actor"class2="teacher"><evaluation>So some of these questions are pretty straightforward</evaluation>—like <q>Why is the bridge too strong?</q></role></P10>
+
+<p9><role class="actor"><response>To be safe</response></role></p9>
+
+<P2><role class="actor" class2="student"><response>What if there was like a huge traffic jam instead of just one car driving over.</response></role></P2>
+<P10>:<role class="actor"class2="teacher"><evaluation>yes,</evaluation><application><explanation><simulation>you want to anticipate the extra load and account for the deterioration of materials over time.</simulation> So we talked about how bridges have to be inspected every year, and its to make sure that one of those members isn’t comprised, but having a bridge that is too strong can protect against the bridge failing while were waiting for it to get inspected and fixed.</explanation></application></role></P10>
+
+<P10><role class="actor"class2="teacher">the last question  <q>how does construction quality affect structural performance? </q></role></P10>
+<P2><role class="actor" class2="student"><response>some like mistake can result in the structure not being able to support the full weight</response></role></P2>
+<P10><role class="actor"class2="teacher"><evaluation>thank you P2.</evaluation></role></P10>
+<p4><role class="actor" class2="student"><response>the stronger something is the better</response></role></p4>
+<P01><role class="actor" class2="student"><evaluation class="self">oh I don’t know anything.</evaluation></role></P01>
+<P10><role class="actor"class2="teacher"><explanation><directive>I think this is a good place for me to stop talking and just let you guys work it out,</directive> because the more thought you put into how you construct this bridge, the better it will perform when we test them. So you might not be surprised to know that the more carefully constructed something is the better its going to be, but I think that’s a good place to continue with our construction.</explanation></role></P10>
+    </Perspective2></dialogue>
+<!--end of review-->
+<!--making starts  evaluation of status and planning-->
+<Perspective2 class="perspective">
+<dialogue class="interactive" class=in-group>
+<p6><role class="audience">
+  “<affect>This is so frustrating;</affect><evaluation><ingroup>we’re</ingroup> missing [points to part on model bridge]</evaluation>”</role></p6>
+<p5><role class="audience">  <response class="building">“ <individual>I know. And<role class="actor">I made these</role>, I’m pretty sure.</individual>”</response></role></p5>
+<P2><role class="actor"><response class="constructive">“Wait, so <individual>I have a question</individual>. <q>If we’re attaching this and this is like that [points to part on model bridge].</q>
+<evaluation>Okay, well that one…there all missing…</evaluation><q>Yea, so like how do we attach it over here?</q> <q><simulation>Do we glue it to that and then it comes out [looking at model]?</simulation></q></response>
+</role></P2>
+<p6> <role class="actor">
+                                                        
+<response class="guided">“Once we start gluing this part together [working with model]. See it’s on the other side, so we have to glue the top and then the sides together, and then…
+ <evaluation class="self">actually I don’t know.</evaluation>”</response>
+                                                        
+</role></p6>
+<p5> <role class="actor">                                                     
+<response class="joint">“We go like this [places pieces on template]. <q>Should we glue those on now?</q>”</response>
+ </role></p5>
+<P2>
+<role class="audience"><response class="joint">“Oh, we should do those…yea, yea, yea.
+<explain class="justify">We should do this…cause then we can do this.</explain></response></role></P2>
+                                                       
+<p2><role class="actor" class="recorder">Is it on it? She said I have to go farther down.</role></p2>
+<p6><role class="actor"><response class="guided">Okay, should we start gluing this [points to P5s side]?</response>”
+                                                    </role></p6>
+<P2><role class="actor"><response>We should glue…</response>”
+</role></P2>
+ <p5><role class="actor"><response>“We want to do that [points to P2s side]”</response></role></p5>
+ <P2><role class="actor"><response class="perspective_change">“Wait, can we get rid of, can we just put it to the side?”</response></role> </P2>
+<p6><role class="audience">
+P6  yea, I was just trying to…
+</role></p6>
+</dialogue></Perspective2>
+<dialgoue class="x-group">
+<P01> <role class="audience"> <action>[comes over]</action></role></P01></dialgoue>
+                                               
+ <!--development of the cutting role-->
+ <P2><role class="actor" class5="project_manager"><directive>“We have to glue this…</directive></role></P2> 
+
+<P2><role class="audience"> <evaluation class="compare">Wait,this is longer than the thing <action>[compares piece to template]</action></evaluation>”</role></P2>
+ <p5><role class="audience">“<response class="perspectivechange">I didn’t notice that”</response></role></p5>
+  <P2><role class="actor"><q>P10, I have a question. This is like longer than the…</q></role></P2>
+<P10> <role class="audience"> <response class="guided"><evaluation>Yes, okay. That’s a great question.</evaluation></response></role></P10> 
+
+<P10><role class="actor"><explanation>They kind of made it longer than they had to be because they join at an angle.</explanation> <q>Do you see that line there?</q> <directive>So you have to cut them on that angle before you glue them to the gusset plate.</directive> </role></P10>
+    
+ <P2><role class="audience"><response class="continuer">“okay”</response></role></P2>
+ <P10>  <role class="actor"><directive>you actually have to cut it at this end too.</directive></role> </P10> 
+<P2><role class="actor"class5= "project_manager">“[P5] <q>do you want to do this?</q> <evaluation class="compare" "performance">I <affect>feel</affect> like you would be better at it.</evaluation>”</role></P2>
+<p5><role class="audience"><response class="nonsubstantive"><action>[silence]</action></response></role></p5>
+<P2><role class="audience"><response>“Okay, I guess I can <evaluation class="self" "performance">ruin</evaluation> it.”</response></role></P2>
+                                                    
+<P2><role class="audience">“<q class="self">What am I doing?</q> <action>[lines up piece to dotted line and begins cutting]</action>.</role></P2> 
+
+<p2><role class="actor" class3="scientist"><evaluation class="self">There is no science behind what I’m doing.</evaluation></role></p2>
+
+<p2> <role class="actor"><action>[cuts one side of cube, picks up and readjusts to cut the bottom side of cube, so as to not crush]</action>”</role></p2>
+                                                      
+<p2><role class="actor"><q>Okay, can I move this like closer to me.</q></role></p2>
+<g1> <action>[acknowledges]</action></g1>
+                                                            
+<p2><role class="audience"><response class="perspectivechange">Okay I think this will work.</response> <evaluation>Okay I think this fits now. Oh perfect, perfect.</evaluation></role></p2>
+                                                                
+<p2><role class="actor"><q class="directive">Okay, do you want to glue this.</q></role></p2>
+                                                               
+<p2><role class="actor" class9="gluing" class5= "project_manager"><q>Can I turn it this way, and you can glue this while I can cut this one.</q></role></p2>
+                                                                    
+<p5><role class="audience"><response class="continuer" "role_acceptance">what. okay.</response></role> </p5>
+<!--new role of cutting is developed and claimed-->
+                                                                
+      <p6> <role class="audience"><evaluation class="self" "performance" "comparison" "role_exchange">I’m so bad</evaluation>, <request class="resources">I need someone to do this with me.</request>” </role></p6>
+     <P2><role class="audience"><response class="role_exchange_planning" "role_exchange">“Yea, can…let me just finish cutting this.”</response></role></P2>
+     <P2><role class="actor" class10="dj"><response class="directive">yea put on water next. <evaluation class="role_exchange">Why are you playing this song?</evaluation></response></role></P2>
+         <P10>  <role class="audience"><response class="role_id">andy is like no I will not be peer pressured.</response></role></P10>
+    <p2> <role class="actor""role_exchange"><action>[singing]</action> <recorder>It’s gonna be me singing in this video.</recorder> <evaluation class="ethics">Oh we should probably skip it when it gets to the part</evaluation>.</role> </p2>
+           
+    <p2><role class="actor">this is ready, p5.</role></p2> 
+       
+<p2><role class="audience"><request class="directive" "ethics">Oh you should skip it to the next song right now. Okay, we’re listening to this.</request></role></p2>
+    
+ <p6><role class="actor"><q class="directive">can you hold the top one.</q></role></p6>
+<p2><role class="actor"><response><q>do you want me to hold these.</q></response></role></p2>
+  <p6><role class="actor"><response class="directive">can you hold that one.</response></role></p6>
+     <P2><role class="actor"><q class="perspectivechange">can I move this back?</q></role></P2> 
+  <p5><role class="audience"><action>[passive acceptance of request]</action></role></p5>  
+
+<p5><role class="actor" "project_management" "strategy">we should do the top one.</role></p5>
+                
+<p5><role class="audience"><evaluation class="performance" class="ingroup">I think that we did it wrong.</evaluation></role></p5>
+    
+  <p6> <role class="audience"><response><q class="performance" class="ingroup">We did it wrong?</q></response></role></p6> 
+    <p5>  <role class="actor"><response class="joint">Yes, <explanation>cause I think these are supposed to be flush with the top of this,</explanation> <q class="perspective">you see what I mean.</q></response></role></p5>
+<P2><role class="audience"><response class="perspective" "joint">yes, I do see what you mean;</response></role></P2>  
+    <p2><role class="actor" class5="project_manager">we can fix that.</role></p2>
+ <p6> <role class="actor"><evaluation class="performance">oh <individual>P2</individual>, its not supposed to go there.</evaluation></role></p6>
+<P2><role class="audience"><response>its all good. <action>[peels apart]</action></response></role></P2> 
+ <p5><role class="actor"><q>where does it go?</q></role></p5>
+ <P2><role class="audience"><response>not there.</response></role></P2> 
+                                                                    
+<p2><role class="actor" class5="project_manager" class="strategy">Okay, let’s think about the next thing.</role> </p2>
+<p5><role class="actor" class5="project_manager""role_exchange"><response class="directive">we need to fix these.</response></role></p5> 
+<p6><role class="audience"><response class="challenge" "joint"><q>are you sure those are not right?</q></response></role> </p6>
+<p5><role class="actor">yea, <evaluation class="compare" "directive">look <action>[looks at G2]</action></evaluation></role></p5> 
+<g1><action>[all unpeel pieces] </action></g1>
+<p6>P6  <role class="audience"'role_exchange'>“<evaluation>Whats wrong with this?</evaluation> <request>Will you fix that…will it stay. If I turn it, can you. Does that work?</request></role>”</p6>
+<P2><role class="actor" "role_exchange">“I think its like…[<action>smoothes out piece]</action>… oh I’m gonna get glue [on me].”</role></P2> 
+<p5>P5  <role class=actor class3="engineer">“We have to do…” <q>“Nupur, Do the <engineering>top chords</engineering> have to be cut diagonal to fit this?”</q></role> </p5> 
+<P10>  <role class="audience"><response>“Yes”</response></role></P10>
+<p2><role class="actor"><request class="role_exchange" "cutting"><individual>I</individual> can do it.</request></role></p2> 
+<p5><role class="actor"><response class="role_exchange_refusal" class="collaborative">I can try</response><action>[tries cutting for the first time]</action></role></p5>
+
+ <P2><role class="actor"><request class=directive class="role_exchange">“Can I see that for one second [Exacto knife]?</request></role>”</P2>
+<p5> <role class="actor"><response class="role_exchange_refusal">[Does not respond until she is finished cutting; gives p2 the knife]</response></role></p5>
+<P2><role class="actor"><action>[cuts].</action> <evaluation class="self" "performance">“Freehand!”</evaluation></role> </P2>
+<p5><role class="audience"><response><action><affect>[Responds to comment with facial expression, possibly showing annoyance.</affect></action></response></role></p5>
+<P10>  <role class="actor"><evaluation>I think I learned something about your group. You have way too many of some. </evaluation></role></P10>
+<p7><role class="audience"><response class=joke>At least we’re putting in the effort.</response></role> </p7>
+<p6><role class="actor"><request class="resources">oh we need an extra one.</request></role></p6>
+<p2><role class="audience"><action>turns to G3</action></role></p2>
+<p7><role class="actor"><response class="directive" class="role_rejection">no anna turn around, don’t show ours.</response></role></p7>
+<P2><role class="actor"><request class=rolechange>do you want me to cut this one?</request></role></P2> 
+[no response]
+<p6><role class="actor"><request class=role_exchange>can you hold this one</request></role> </p6>
+<p5><role class="actor"><response class=role_acceptance><action>[hold a gusset plate]</action></response></role></p5> 
+<P2><role class="actor">“<q class=comparison class="performance">Does <individual>yours</individual> fit, like perfectly?”</q></role></P2> 
+<p5><role class="audience"><response>no</response></role></p5>
+<P2><role class="audience"><response class=comparison class="performance">“Oh, <individual>mine</individual> does.”</response></role> </P2>
+ <p5>P5  <role class="audience"><response>“[laughs, <affect>sarcastically</affect>]…oh.”</response></role></p5>
+                                                            
+                                                        
+<p6><role class="actor"><q>“Should I put these on here.”</q></role></p6>
+<P2><role class="actor" class5= "project_manager"><q>“Do you want to finish this side first?”</q></role></P2>
+<p6>P6  <role class="audience" ><response>“yea.”</response></role></p6>
+<P2><role class="actor"><q>“Okay. Is this supposed to be connected to something?”</q></role></P2>
+<p5>P5  <role class="audience" class4="expert"><response>“No.”</response></role></p5>
+<P2><role class="actor" class5="evaluator"><q>“Are you sure?”</q></role></P2>
+<p5>P5  <role class="audience" class4="expert"><response>“Yeah.”</response></role></p5>
+<p6>P6  <role class="actor">“<q>on that?</q> <action>[reaches for glue]</action>”</role></p6>
+<P2><role class="audience"><response>“yeah”</response></role></P2>
+<p5>P5  <role class="actor"><action>[holding two pieces together]</action></role></p5>
+<P2><role class="actor" class10="performer" ><action>[singing]</action></role></P2>
+<p6>P6  <role class="actor"><action>[gluing]</action></role></p6>
+<p5>P5  <role class="actor"><action>[stabilizing]</action></role></p5>
+<P2><role class="actor"><action>[stabilizing]</action></role></P2>
+<p6>P6  <role class="actor"><action>[stablizing]</action></role></p6>
+<P2><role class="audience" class5="evaluator">“It just like puckered because of the glue.”</role></P2>
+
+<p6>P6  <role class="actor"><action>[stabilizing pieces]</action></role></p6>
+<P2><role class="actor" class5="project_manager">“Want to put glue here and here while I hold it.”</role></P2>
+<P2><role class="actor"><action>[stabilizes]</action></role></P2>
+<p6><role class="actor"><action>[reaches for glue]</action></role></p6>
+     <P2><role class="actor" class5="recorder">“Does it look like the camera is on it?”</role></P2>
+    
+                  
+<Perspective01 class=perspective>
+<P01><role class="audience"class4="novice" class2="student"><request class="clarification" "strategy">“Wait how do you know which number goes where? Or are you just trying?”</request></role></P01>
+<p4><role class="actor"class4="novice">P4  <response class="strategy" class4="novice">“You just got to try it out.”</response></role></p4>
+<p4><role class="actor">P4  <declarative>“The skinny one go down here.”</declarative></role></p4>
+<P01><role class="actor"><q>“right here?”</q></role></P01>
+<p4><role class="actor"><response>P4  “dude, get out of here.”</response></role></p4>
+<P01><role class="actor"><q>“what do you mean”</q></role></P01>
+<p3><role class="audience" class4="expert"><declarative>P3  “Those don’t go there.”</declarative></role></p3>
+<P01><role class="actor"><q>“alright, where do they go?”</q></role></P01>
+<p4><role class="actor" class4="expert"><declarative>P4  “They go here.”</declarative></role></p4>
+<p3><role class="audience" class4="expert"><declarative>P3  “nope, no…we only use three of them….there you go. So, we’ll lay it all out.”</declarative></role></p3>
+<p4><role class="actor">P4  “and we’re going to need two really really long ones.”</role></p4>
+<P01><role class="audience"><evaluation>look at theirs they pretty much have nothing done. And look at ours we’re pretty much like we’re doing find, and look at them—like what’s up with this –wow, wow.</evaluation></role></P01> 
+<p3><role class="actor">P3  <request>hey can we play music.</request></role></p3> 
+<P01><role class="actor"><response>no, actually yea we can; she wants a realistic</response></role></P01>
+<p3><role class="audience" class3="engineer">P3  <evaluation>I don’t think these are the right ones though-we need <engineering>top chords.</engineering></evaluation></role></p3> 
+<P01><role class="audience"><q>what do you mean</q></role></P01>
+<p4><role class="actor">P4  <explanation>some of them are shorter.</explanation></role></p4> 
+<P01><role class="actor"><response class="performance" "evaluation">yea, cause drew didn’t know how to cut them.</response></role></P01> 
+
+<p4><role class="actor">P4  <response class="challenge" "evaluation">no cause the shorter ones are for the verticals.</response></role></p4> 
+<P01><role class="audience"><response>hehe</response></role></P01>
+<p3><role class="actor"class5= "project_manager" class3="engineer">P3  <strategy>“Alright, so I think we should glue down the <engineering>thin struts</engineering> first to the <engineering>gusset plates</engineering>.”</strategy></role></p3>
+<p4><role class="audience">P4  <declaration class="observation">“Alright, so we got everything laid out.”</declaration></role></p4>
+<p3><role class="actor"class5= "project_manager" class3="engineer">P3  <strategy>“Yea, so lets glue down the <engineering>thin struts</engineering> first.”</strategy></role></p3>
+<p4><role class="actor">P4  <response class="feedback" "positive">“yea, let’s get some glue. That’s what I’m saying.”</response></role></p4>
+<p3><role class="actor">P3  <request class="resources">Nupur, could we get some glue; what are we using to glue the</request></role></p3>
+<P10>  <role class="actor"><declaration>youre using wood glue to glue the manila folders.</declaration></role></P10> 
+<p3><role class="actor">P3  <request class="materials" "role_assignment">okay, could we get some wood glue then</request>.</role></p3>
+<P10>  <role class="actor"><response class="role_acceptance">yes.</response></role></P10>  
+<P01><role class="actor"><q class="constructive">alright, which one should we glue first, we should glue the numbers first?</q></role> </P01>
+<p3><role class="actor" class4="expert">P3  <response class="feedback" "positive">yes.</response></role></p3> 
+<P01><role class="actor"><q>So we got to take this apart again.</q></role></P01> 
+<p3><role class="actor">P3  <response class="feedback" "positive">no,</response></role></p3> 
+<P01><role class="actor"><response class="challenge" "strategy" "explanation">yes, cause we got to glue this first.</response></role></P01> 
+<p3><role class="actor">P3  <response class="clarification" "directive">we should do the long ones first.</response></role></p3> 
+<P01><role class="audience"><q class="strategy">why do we do the long ones first.</q></role></P01> 
+<p3><role class="actor">P3  <q>like onto the numbers there.</q></role></p3> 
+<P01><role class="actor"><response>oh alright.</response></role></P01> 
+<p4><role class="actor">P4  <q>alright guys,ready</q></role></p4>
+<P01><role class="actor"><response>not really.</response></role></P01> 
+<p4><role class="actor">P4  <response>its about to get wild.</response></role></p4> 
+<P01><role class="actor"><q>Oh you just go right over it?</q></role></P01>
+<p4><role class="actor">P4  <response class="feedback" "positive">of course.</response></role></p4> 
+ <p4><role class="actor">P4  <explanation class="strategy">“I’m just going to slap a little glue there.</explanation>”</role></p4>
+<p3><role class="actor" class4="expert"class5= "project_manager">P3  <directive class="strategy">“one, two, and the bottom part of one over there”</directive></role></p3>
+<p4><role class="actor">P4  <response class="materials" "affect">“Ah, it’s all over my fingers now.</response>”</role></p4>
+<p3><role class="actor" class4="expert"class5= "project_manager">P3  <directive>“Put more on it.</directive>”</role></p3>
+<p4><role class="actor" class11="collaborator">P4  <explanation>“It will spread out, yeah…thanks, thanks dude”</explanation></role></p4>
+<P01><role class="actor"class11="collaborator"><response>“Yea, no problem.”</response></role></P01>
+<p4><role class="audience">P4  <response class="role_id">“I’m so glad I have you.”</response></role></p4>
+<p4><role class="actor">P4  <action>[exclamation]</action></role></p4>
+<p3><role class="actor">P3  <declaration>“Put some here here, we’re gonna get this.”</declaration></role></p3>
+
+<p3><role class="actor"> <explanation> “We’re gonna get this long one first, so that it will all like…”</explanation></role></p3>
+<P01><role class="actor"><q>“Wait don’t we first have to glue it to the bottom?”</q></role></P01>
+<p4><role class="actor">P4  <q>“Guys [G1], how much glue are you using?”</q></role></p4>
+<P01><role class="audience"><evaluation>“Wait, that’s way too much.”</evaluation></role></P01>
+<p3><role class="audience">P3  <evaluation>“That’s way too much.”</evaluation></role></p3>
+<p4><role class="actor">P4  <request class="resources" "xgroup">“Girls, how much glue are you using?”</request></role></p4>
+<P01><role class="actor"class4="novice"><q class="strategy">“Wait, P3, don’t we have to glue it to the paper first!”</q></role></P01>
+<p6><role class="audience">P6  <directive class="strategy">“I wouldn’t put the glue on the thing.</directive>”</role></p6>
+<P01><role class="audience"><response class="feedback" "positive">“That’s what I’m saying…oh my god, what are you doing”</response></role></P01>
+<p4><role class="actor">P4  <response>“Alright, you know what…we’re going to take 2, we’re gonna take 2”</response></role></p4>
+<P01><role class="actor"><q class="challenge" "strategy">“Don’t we have to glue it to the!”</q></role></P01>
+<p3><role class="actor">P3  “Guys.”</role></p3>
+<p4><role class="actor">P4  <directive>“We’re gonna take two.”</directive></role></p4>
+<p3><role class="actor">P3  <directive>“Hold that down. Hold that down.”</directive></role></p3>
+<p4><role class="actor">P4  “Yo. Watch your sleeve”</role></p4>
+<p3><role class="actor">P3  “Oh son of a gun. Its just glue.”</role></p3>
+<p3><role class="actor">P3  “P4 you put no glue on the bottom.”</role></p3>
+<p4><role class="actor">P4  <affect>“Alright, you know what, let’s cry.</affect>”</role></p4>
+<p3><role class="actor">P3  “Just spread it out.”</role></p3>
+<p4><role class="actor">P4  “Just like rub it all over it…yeah, get it on there.”</role></p4>
+<P01><role class="audience">this is just rough</role></P01>
+<p5><role class="actor">P5  let’s put this one here.</role> </p5>
+<p4><role class="audience">P4  Okay, our bridge is going to fall down asap. Does this like rub off.</role></p4> 
+<P01><role class="actor">I’m so confused; how does this stick to the paper. Don’t we have to glue it under too.</role></P01> 
+<p3><role class="actor">P3  no</role></p3>
+<p4><role class="actor">P4  no, we don’t glue it the paper.</role></p4> 
+<P01><role class="actor">Oh yea, at the end we’re going to take it apart. duh.</role></P01> 
+<p4><role class="actor">P4  “I feel like we need some meat on these. We got to get some meat on this bridge”</role></p4>
+<p9><role class="audience">P9  <response class="sarcasm">“I agree. Way more meat.</response>”</role></p9>
+<P10>  <role class="audience" class2="teacher"class3="engineer">[laughs] <q class="sarcastic">“Yea, what’s the meat of the bridge?”</q></role></P10> 
+<p4><role class="actor">P4  <explanation>“The thick ones.”</explanation></role></p4>
+<p4><role class="actor">P4  <directive>“Put it like there and there.”</directive></role></p4>
+<P01><role class="actor"><q>“Where do you want it? Here?”</q></role></P01>
+<p4><role class="actor">P4  <directive>“A little more there…yea.</directive>”</role></p4>
+
+<P10>  <role class="audience"><response class="permission">No, I let her know that we listen to music in here…its chill.</response></role></P10>
+<P01><role class="actor"><response class="role_assignment">Alright, I’m about to just</response></role></P01>
+<P10>  <role class="audience" class10="fan"><response>I listened to both of those  songs --I like water</response></role></P10>
+<P01><role class="audience"><q>you like water, of course you like water, why you like water</q></role></P01>
+<p4><role class="audience">P4  <q>you don’t like that song.</q></role></p4> 
+<P01><role class="audience"><evaluation>no, funny but…</evaluation></role></P01>
+<p4><role class="actor">P4  <request class="role_request">you want me to play it.</request></role></p4> 
+<p4><role class="actor"> <response class="role_assignment"> No I'll play it.</response></role></p4> 
+<p4><role class="actor">P4  <declaration class="role_assignment">no I’ll play it…you aint gonna play it.</declaration></role></p4> 
+<P01><role class="actor">P4  <request class="role_request_accepted">You play it you play it.</request></role></P01> 
+<P01><role class="actor"><action>[plays song]</action></role></P01>
+<p4><role class="audience">P4  <response class="challenge">you just played a song</response>.</role></p4> 
+<P01><role class="actor"><declaration>its not water.</declaration></role></P01> 
+<p4><role class="actor">P4  <response class="role_assignment">okay play it next then.</response></role></p4> 
+<P01><role class="actor"><response class="role_acceptance">okay its next.</response></role></P01> 
+<P01><role class="audience"><q class="ethical">is this allowed to be on the video</q></role></P01>
+<p4><role class="audience">P4  <evaluation class="ethical">its very explicit.</evaluation></role></p4>
+<p4><role class="actor">P4  <request class="resources">I think we could use a thinner popsicle stick if you have those.</request></role></p4> 
+<P01><role class="actor"><explanation>no its actually better to have thicker glue. Alright so just slobber it all over?</explanation></role></P01> 
+<p4><role class="actor" class3="engineer"> <engineering>Imagine making one of these in real life.</engineering></role></p4>
+<P01><role class="audience" class3="engineer"><q class="engineering">I don’t get how they do it.</q></role></P01> 
+<p3><role class="audience"class5="evaluator">P3  <response class="problem_finding">“Guys, I think we used the wrong one; We used the wrong one for right there.”</response></role></p3>
+<p4><role class="actor">P4  <q><affect>“uuugh, what do you mean”</affect></q></role></p4>
+<p3><role class="actor">P3  <explanation>“Cause like that fits there.”</explanation></role></p3>
+<p4> <role class="actor">P4  <response class="challenge">“No those are the same.</response>”</role></p4>
+<p3><role class="actor" class4="expert">P3  <response class="feedback" "constructive">“And that one doesn’t there.”</response></role></p3>
+<P01><role class="actor">“Okay”</role></P01>
+<p3><role class="audience">P3  <response class="perspective">“Oh, you’re right though, I see what your saying”</response></role></p3>
+<p4> <role class="audience">P4  <response>too late now.</response></role></p4> 
+<p3><role class="actor">P3  <declarative>“Make sure that one gets some glue.”</declarative></role></p3>
+<P01><role class="actor">“<request class="role_assignment">Put some glue.</request>”</role></P01>
+<p4><role class="audience">P4  <evaluation>“Yea. You cut those perfectly.”</evaluation></role></p4>
+<P01><role class="actor"><request class="role_assignment">“Let me get that [glue].”</request></role></P01>
+<p4><role class="actor">P4  <declarative>“yea, yea, yea. Slobber some there.”</declarative></role></p4>
+<p4><role class="actor">P4  <declarative class="strategy">put it like there and there.</declarative></role></p4> 
+<P01><role class="actor"><q>where you want it, there.</q></role></P01> 
+<p4><role class="actor"> <q> a little more, yea.</q></role></p4> 
+<P01><role class="actor"><q>right here.</q></role></P01> 
+<p4><role class="actor">P4  <response class="feedback">yea.</response></role></p4> 
+<p3><role class="actor" class11="modeler">P5  <declarative class="strategy">put a little in the middle right there.</declarative></role></p3> 
+<p4><role class="audience">P4  <response class="feedback" "positive">oh true cause it sits there.</response></role></p4>
+<p5><role class="actor">P5  <declarative>now line it up right there.</declarative></role></p5> 
+<p4><role class="actor">P4  <response>wait slobber some in there, inside there</response></role> </p4>
+<p3><role class="actor">P5  <response>got it, let’s hold it there for a second.</response></role></p3> 
+<p4><role class="audience">P4  <evaluation>yo, you cut those perfect. I feel like too much glue might be bad</evaluation></role></p4>
+<P01><role class="actor"><evaluation>I think its better.</evaluation></role></P01> 
+<p3><role class="actor"><request>P3  do this.</request></role></p3> 
+<P01><role class="actor"><q>where</q></role></P01>
+<p3><role class="actor">P3  <q>the two ends.</q></role></p3> 
+<P01><role class="actor"><request class="role_assignment">do you want it in the middle also.</request></role></P01> 
+<p3><role class="actor" class4="expert">P3  <response class="problem_finder">no cause it will stick to the paper.</response></role></p3> 
+<P01><role class="audience"><response class="challenge">but the other one is sticking to the paper also.</response></role></P01> 
+<p3><role class="actor">P3  <explanation>no its got that thing right there</explanation>.</role></p3> 
+<P01><role class="audience"><response class="performance">oh smart.</response></role></P01> 
+<p4><role class="actor"><request class="role_exchange">P4  wait can I see that for a second.</request></role></p4> 
+
+<P01><role class="actor"><q>where do you want it. Right here. [glue]</q></role></P01> 
+<p3><role class="audience"><evaluation>omg that is so much.</evaluation></role> </p3> 
+<p4><role class="audience"><evaluation>P4  omg that is so much.</evaluation></role></p4>
+<p3><role class="actor"><request class="role_assignment">P3  can you put glue on this andy, on the bottom.</request></role> </p3>
+<p4><role class="actor"><strategy>P4  should we slobber some there, between those two.</strategy></role> </p4>
+<P01><role class="actor"><response>yea.</response></role></P01> 
+<p4><role class="audience"class5="evaluator">P4  <response class="problem_finidng">this is going to be stuck to this.</response></role></p4>
+<p3><role class="audience">P3  <response class="compare" "risk_acceptance">yea, but they took it off no problem.</response></role></p3> 
+<P01><role class="audience"><response>yea, it’ll be fine once it dries.</response></role></P01> 
+
+<P01><role class="actor"><response class="role_exchange">here anna take it.</response></role></P01> 
+<p7><role class="actor">P7  <q>whats the new one with water in it.</q></role></p7> 
+<P01><role class="audience"><song>a boogie and Kodak.</song></role></P01> 
+<p4><role class="actor"class4="novice">P4  <strategy>wait we need a really long one. We’re missing one. Oh right there. No I think its like that</strategy>.</role></p4>
+<P01><role class="actor"><q>do they have glue on them.</q></role></P01>
+<p3><role class="actor" class4="expert">P3  <response>no its not</response></role></p3>
+<p4><role class="actor"><response>P4  are you sure, oh yea, I don’t know. Okay lets do it like that.</response></role></p4> 
+<p3><role class="actor"> <request class="role">let’s do the other diagonals in first</request></role></p3> 
+<p3><role class="actor">P5  <request class="role">Can you get glue on the five.</request></role></p3> 
+<p4><role class="actor">P4  <q>this is the vertical one?</q></role></p4>
+
+<P01><role class="actor"><q class="joint">alright where do you want. On top</q></role></P01>
+<p4><role class="audience"><response class="feedback" "positive">P4  yea, on top.</response></role></p4> 
+<p4><role class="actor">P4  <q>should we glue these together</q></role></p4>
+<p3><role class="audience">P5  <response class="feedback" "positive">yea.</response></role></p3> 
+<P01><role class="actor"><response class="joint" "strategy">wait you want me to put it right there; actually open them apart a little and I’ll put it in.</response></role></P01> 
+<p3><role class="audience"><evaluation>P3  its pretty good.</evaluation></role></p3> 
+<P01><role class="audience"><evaluation>it does look nice.</evaluation></role></P01>   
+</Perspective01></section>    
+<section class="session_2">
+<Perspective01 class="perspective">
+<dialogue> 
+<P01><role class="actor">“<request class="perspectivechange">Alright, wait let me push this back for a sec.</request>”</role></P01>
+<P01><role class="actor"  class5= "problem_solver">“Jeez…<request class="resources">do we have any Exacto knives.</request>”</role></P01> 
+<P01><role class="actor" class5="problem_solver"><action class="new_method">[goes and gets one and begins using]</action></role></P01>
+<p3> <role class="audience"><action class="adopts_method">[goes and gets an exacto]</action></role></p3>
+<P2><role class="actor"><action class="request" "role_assignment">[mouths music]</action></role></P2>
+<p6><role class="audience" "secondary"> “I’ll play some.”</role></p6> 
+<P01><role class="audience" class10="dj" ><request>“Yea, <request class="roleexchange">do you want to play some.</request> <explanation>My phone is dying.</explanation>”</request></role></P01> 
+<p6><role class="actor" class10="dj" class8= "outsider"><response class6="role_acceptance"> “I can do that for you P01. <evaluation class7="self" class8="outsider">But I don’t have the kind of music you guys do.</evaluation></response>”</role></p6> 
+<P10><role class="audience" class2="teacher" "musician">“That’s okay.”</role> </P10>
+<P01><role class="audience" class10="dj" class8= "insider"><response class="feedback" "positive">“I have so many different kinds of music. You can play whatever.”</response></role> </P01>
+<P2><role class="audience" class10="fan">“Not me.”</role> </P2>
+<p3>P4  <role class="actor"><action>[returns with exacto]</action></role></p3>
+<P01><role class="actor">“Alright, <action class="perspectivechange">[rotates bridge]</action>”</role></P01>
+<p3><role class="actor"><action>[working with exactos to release bridge]</action></role></p3>
+<p3><role class="actor" class4="expert"> “Don’t worry about cutting the white paper.”</role></p3> 
+<P01><role class="audience">“Yea.”</role> </P01>
+<P01><role class="actor" class5="evaluator"><response class="reevaluation" "strategy" "self">“I didn’t know this glue was going to be this powerful.”</response></role></P01> 
+<p3><role class="actor" class5="evaluator">“Yea.”</role> </p3>
+<p3><role class="actor" class5="evaluator"> “Nothing is ever gonna come apart though.”</role></p3> 
+<p3><role class="actor" class5= "project_manager">“Yea, last one. K, that’s good.”</role></p3> 
+<p3><role class="audience" class5="evaluator"><action>[Holds bridge up to evaluate it.]</action></role></p3>
+<P01><role class="audience" class5="evaluator"><action class="perspectivechange">[Rotates bridge to evaluate other side.]</action></role> </P01>
+<p8> <role class="audience" "secondary" class5="evaluator">“Woah.”</role></p8>
+<P01><role class="audience" class5="evaluator">“Pretty good.”</role> </P01>
+<p3><role class="audience" class5="evaluator"> “It’s good.”</role></p3> 
+<P01><role class="audience" class5="evaluator">“Alright.”</role> </P01>
+</dialogue>
+<dialogue> 
+<p3><role class="actor"class5= "project_manager"> “<q class="self">Alright, so what do we want to do now?</q> … <q>We want to do this [points to other side]?</q> <explanation>We already know how to do one.”</explanation></role></p3> 
+<P01><role class="audience" class11="collaborator">“Yea.”</role> </P01>
+<p3><role class="actor"class5= "project_manager"> <response class="goal">“Alright, so we’ll get this done.”</response></role> </p3>
+<P01><role class="actor" class11="collaborator"><response class="clarification">“Wait, you want to do this side or let’s just do this again.”</response></role> </P01>
+<p3><role class="actor" class11="collaborator"><response class="strategy" "explanation" "level"> yea, this part looks more complicated; let’s just do this again.</response></role></p3>
+<p3><role class="actor"><request class="resources">Let’s just pull out the stuff</request></role></p3>
+<P01><role class="actor" class11="collaborator"><request class="strategy" "resources">get the right pieces</request></role></P01>
+<p3><role class="actor" class11="collaborator" class4="expert"><declarative>that goes there.</declarative></role></p3> 
+<P01><role class="actor" class4="novice" class11="collaborator"><request class="role_exchange">want me to get glue</request></role></P01>
+<p3><role class="actor"class5= "project_manager" class11="modeler"><response class="role_refusal">not yet, lets just lay this out.</response></role></p3> 
+<p3><role class="actor"><action class="cutting">[cutting ends]</action></role></p3>
+<P01><role class="audience" class11="collaborator"><request class="role_exchange">I’ll do that let me see</request></role></P01>
+<p3><role class="actor"><response class="role_exchange_refusal">I got it.</response></role></p3> 
+<P01><role class="actor" class11="collaborator"><q class="clarification" "resources">how many of these do we need?</q></role></P01>
+<p3><role class="actor"class5= "project_manager" class3="engineer">and then I got you the <engineering>15x4</engineering>.</role></p3> 
+<P01><role class="audience" class11="collaborator"><q class="strategy">how do you know which number goes where?</q></role></P01>
+<p3><role class="actor" class11="collaborator" class4="expert"><response class="strategy" "spatial">you just look at the shape.</response></role></p3> 
+<P01><role class="audience" class11="collaborator" class4="novice"><q class="position" "materials">And then what’s here</q></role></P01>
+<p3><role class="actor" class11="collaborator" class4="expert"><response class="id" "materials">its these.</response></role></p3> 
+<P01><role class="audience" class11="collaborator" class4="novice"><q>is that the last one. What about this one right here?</q></role></P01>
+<p3><role class="actor" class11="collaborator" class4="expert"class5= "project_manager">That’s a seven….<request class="role_change">so do we want to glue these down. Lets glue these down.</request></role></p3> 
+<p3><role class="actor" class11="collaborator" class4="expert">diagonals, laterals,</role></p3> 
+<P01><role class="actor" class11="collaborator">I got it <action class="gluing">[glue]</action>…<q class="clarification">wait do we know which pieces we’re putting together.</q></role></P01> 
+<P01><role class="actor" class11="collaborator" class4="novice">what are the ones</role></P01>
+<p3><role class="actor" class11="collaborator" class4="expert"class5= "project_manager" class11="modeler"> Start doing those first</role></p3>
+<p3><role class="actor" class2="student"class3="engineer"><request>Nupur, could you come here a second.</request> <q>does the <engineering>top lateral chord</engineering> go here—just making sure before we put them down.</q></role></p3> 
+<P10><role class="actor" class4="expert"><response class="feedback" "positive">yea.</response></role></P10> 
+<p3><role class="actor"class5= "project_manager">So put a little more there</role></p3>
+<P01><role class="actor" class11="collaborator"><q>and on the five too.</q> </role></P01>
+<p3><role class="actor" class4="expert"><response class="feedback" "positive">ya.</response></role></p3> 
+<p3><role class="actor"class5= "project_manager">alright and then a little here. So like right here. Yeah.</role></p3> 
+<P01><role class="actor" class11="collaborator"><q>and on the six too.</q></role> </P01>
+<p3><role class="actor"class5= "project_manager">let me hold this first. Lets see, hold that down.</role></p3> 
+<P01><role class="actor"class5= "project_manager">Alright, that should dry.</role></P01> 
+<p3><role class="actor"class5= "project_manager" class11="modeler">Alright do you want to do here. <strategy class="new_method">Just hold it right here. [dips piece in glue. positions piece]</strategy>. Let that dry a little bit. Let’s put some here and here, so what we’ll do is keep going like that and that.</role></p3> 
+<P01><role class="actor"><action>puts down glue.</action></role> </P01>
+<p3><role class="actor"class5= "project_manager"><request class="strategy">want to try putting some on the end of this and see how this works.</request></role></p3> 
+<P01><role class="actor"><response class="strategy""reject">I’ll just put it here.</response></role></P01> 
+<p3><role class="actor"><response class="explanation">I just don’t want the angle to get skrewed up.</response></role></p3> 
+<P01><role class="audience" class8="insider"class5="evaluator">I kind of like working with just two people, its simpler.</role> </P01>
+<P01><role class="actor" class11="collaborator">alright are you ready for this</role></P01>
+<p3><role class="actor" class5="project_manager"class11="modeler">want to put some on the one. The one you have to hold down while I put this on.</role></p3> 
+<P01><role class="actor"class11="collaborator"><q>Alright, where else.</q></role> </P01>
+<p3><role class="audience" "secondary"><xdomain>what sound expo? that’s a fun class.</xdomain></role></p3> 
+<p8><role class="audience">P8  <q>hows it going</q></role></p8>
+<P01><role class="actor">its going great; <q class="evaluation" "performance">have you guys done anything?</q></role></P01>
+<p3><role class="audience"class5="evaluator"><q>why is this not lining up?</q></role></p3>
+<P01><role class="audience" class11="collaborator">there we go its fine. </role></P01>
+<p3><role class="actor"class5= "project_manager" "strategy">let that dry before we go do this side.</role></p3> 
+<p3><role class="audience" class11="collaborator"class5= "project_manager"> seems to be working well…putting it on the piece. <action class="new_strategy">[dipping piece in glue]</action></role></p3>
+<P01><role class="audience" class11="collaborator">yea, I think its going to work a lot better.</role> </P01>
+<P01><role class="actor">miss Johnson, mr boyd said…</role></P01>
+<P11><role class="actor" class2="teacher">you have to email me about that…I’m not going to remember.</role></P11> 
+<P01><role class="actor">yea, cause I went to your room the other day but I guess you were talking to someone.</role></P01> 
+<P11><role class="actor" class2="teacher">eeemail me about it.</role></P11> 
+<P01><role class="actor" class2="student"><response><affect>I hate email</affect>—why can’t we just talk</response></role></P01>
+<P11><role class="actor" class2="teacher">whispers as she leaves– email me</role></P11>
+<P01><role class="audience" "evaluation" "strategy">hey what are you doing, is that one wrong?</role></P01>
+<p3><role class="actor"class5= "project_manager"class5= "problem_solver"> <explanation>there wasn’t enough room at the top.</explanation></role></p3> 
+<P01><role class="actor"class5= "project_manager"><request class="role_exchange">here let me do that part and you do the glue.</request></role></P01> 
+<p3><role class="actor"class5= "project_manager"><request class="role_exchange_refusal">would you mind putting glue.</request></role></p3> 
+<P01><role class="actor"class5= "project_manager">yeah you put glue.</role> </P01>
+<p3><role class="actor" class5="project_manager" class4="expert" class11="collaborator"> so its going to go one like this..no you got move this.</role></p3> 
+<P01><role class="actor" class5="project_manager"><request class="role_assignment">did you put glue on this yet.</request></role> </P01>
+<p3><role class="actor"><response>no I did not. …I don’t know about the middle one.</response></role></p3> 
+<P01><role class="actor" class4="expert">put a little in between</role></P01>
+<p3><role class="audience"><response>yea.</response></role></p3> 
+<P01><role class="actor" class4="expert">We have to push that down…That’s why I was trying to tell you we can’t wait for it to dry.</role></P01> 
+<p3><role class="actor"class5= "project_manager"> okay let’s put some more glue on this.</role></p3> 
+<P01><role class="actor"><q class="clarification">would you want this to touch it.</q></role></P01> 
+<p3><role class="audience" "evaluation" "project_management">no I think it would actually be better that way. I’m going to cut a little off of that so its not so long on this end.</role></p3> 
+<P10><role class="audience" class5="evaluator" class4="expert">so they should be touching across the top.</role> </P10>
+<p3><role class="actor"><q class="challenge">is it okay if its not for this one</q></role></p3>
+<P10><role class="audience" class4="expert"><response>no, it will really affect the …</response></role></P10>
+<P01><role class="actor" class11="collaborator"><q>yea you want it just like this.</q></role></P01>  
+<P10><role class="audience" class4="expert">yea.</role> </P10>
+<P01><role class="actor">hey!</role> </P01>
+<p3><role class="actor"class5= "problem_solver"class11="modeler">let’s put this over the top (extra paper to close gap—illegal fix)</role></p3>
+<P01><role class="audience"class5= "project_manager">we’re done.</role></P01> 
+<P01><role class="audience" class5="evaluator"><response class="evaluation" "performance">wait did we get the same done as we did yesterday.</response></role></P01> 
+<p3><role class="audience" class5="evaluator"> <response class="evaluation" "quantitative">I think we did more today.</response></role></p3> 
+</dialogue>
+</Perspective01>
+<perspective2 class=perspective> 
+<dialogue> 
+<P2><role class="actor" class5="evaluator"><response class="in-group">this is just completely stuck</response></role></P2>
+<P10><role class="audience" class2="teacher"><response class="evaluation" "group_2" >yours is just completely stuck</response></role></P10>
+<p6><role class="audience" "secondary"class8= "insider"><response class="xgroup">ours is too.</response></role></p6> 
+<p5><role class="audience" class11="collaborator"  class5= "project_manager">P5  <q class="evaluation" "goals">“Does that seem strong <action>[holds up bridge side]</action>”</q></role></p5>
+<P2><role class="audience" class11="collaborator"><response class="feedback" "positive">“Wow, so strong!”</response></role></P2>
+<P2><role class="audience" class5="evaluator" class3="engineer"><response class="feedback" "constructive">“well, that should be like…I don’t know.”</response></role></P2>
+<p6><role class="actor" class11="collaborator" class5="problem_solver"><request class="new_strategy">“Can we glue it together?”</request></role></p6>
+
+<p6><role class="actor" class11="collaborator"><request class="role_assignment">“What do we want to do next?”</request></role></p6>
+<p5><role class="actor"class5= "project_manager" class3="engineer"><response class="goals">“We have to do the <engineering>top chords</engineering> on here or the bottom”</response></role></p5>
+<p6><role class="actor" class11="collaborator"><response>“We can do both”</response></role></p6>
+<P2><role class="actor" "decision_maker" class3="engineer"><response class="decision">“Yea let’s do <engineering>top chords</engineering> on here.”</response></role></P2>
+<p6><role class="actor"class5= "project_manager"><request class="role_assignment" "resources">we need to cut out that piece we’re missing.</request></role></p6> 
+<p5><role class="actor"><response class="role_refusal">I’m just avoiding it.</response></role></p5> 
+<p6><role class="actor" class8="insider">we should <ethical>steal</ethical> from someone else.</role></p6>
+<p6><role class="actor"  ><response class="id" "materials">That does not look like what I need <action>[taking out members]</action></response></role></p6>
+<p5><role class="actor"class5= "project_manager" class11="modeler">:<response class="resources" "goals" "systems">we need those too.</response></role></p5> 
+<p6><role class="actor">oh okay.</role></p6> 
+<P2><role class="actor" class3="engineer"><response class="id" "materials"><engineering>top chords.</engineering> </response></role></P2>
+<dialogue class="xgroup"> music </dialogue>
+<P2><role class="audience" "secondary"  >[<action>Looks at G2 evaluating there side]</action></role></P2>
+<P2><role class="audience" "secondary"  class8= "insider"><response class="evaluation" "in-group">“That looks really good. That looks like perfect.”</response></role></P2>
+<p6><role class="actor" class2="student">:<request class="role_development">how do I cut this?</request></role></p6> </dialogue>
+<dialogue class="guided">
+<P2><role class="actor" class2="teacher" class4="expert"><response class="perspective">“Do you see that dotted line”</response></role></P2>
+<p6><role class="actor" class2="student"><q class= "joint">“So what I just go down it.</q>”</role></p6>
+<P2><role class="actor" class2="teacher"><response class="feedback" "constructive" "specific">“So you just line it up like with the bottom two, and your going to cut the bottom and this top one so that its with the dotted line.”</response></role></P2>
+<p6><role class="actor" class2="student"><response class="model">“So like this?”</response></role></p6>
+<P2><role class="actor" class4="expert" class11="collaborator">“<request class="role_exchange">Do you want me to do it. I can just.</request>”</role></P2>
+<p6><role class="actor" class2="student"><response class="role_exchange_accepted" "performance" "self" "affect">“I don’t want to mess it up.”</response></role></p6>
+<P2><role class="actor" class11="collaborator"><response class="role_exchange" class2="student">“Yea. I probably will too but it’s fine.”</response></role></P2>
+</dialogue>
+<dialogue> 
+<p6><role class="audience" class5="evaluator"class5="evaluator"><request class="evaluation" "role_assignment">why does this look bad?</request></role></p6>
+<p5><role class="audience" class5="evaluator"><response>I don’t know.</response></role></p5> 
+<p6><role class="audience" class5="evaluator"class5="evaluator"><response class="compare">Yea, these just aren’t pulled tight enough.</response></role></p6> 
+<p6><role class="audience" class5="evaluator"class5="evaluator"><declarative class="id" "problem">this isn’t tight, that’s the problem.</declarative></role></p6> 
+<p6><role class="audience" class5="evaluator"class5="evaluator"><response class= "perspectivetaking">see anna how these aren’t straight.</response></role></p6> 
+<p6><role class="audience" class5="evaluator"class5="evaluator"><q>wait how did that just come off</q></role></p6>
+<P2><role class="actor" class4="expert"><response>no its not attached.</response></role> </P2>
+<p6><role class="actor" class11="collaborator"><request class="rolechange">want to give me the other one.</request></role></p6> 
+<P2><role class="actor"class5= "project_manager"class5="evaluator"><response class="problem" "materials">oh, we’re missing… The other…</response></role></P2>
+<p6><role class="actor" class11="collaborator"class3="engineer"> <response class="joint">“<engineering>Top chord</engineering>”</response></role></p6>
+<P2><role class="actor" class11="collaborator"class3="engineer"><engineering>“Top chord”</engineering></role></P2>
+<p6><role class="actor" class11="collaborator"class3="engineer"class5= "problem_solver"><q>“This it?”</q></role></p6>
+<P2><role class="actor" class11="collaborator"class3="engineer" class4="expert"><response class="feedback">“Yea.”</response></role></P2>
+<p6><role class="actor" class11="collaborator"class5= "problem_solver"> “Okay.”</role></p6>
+<P2><role class="actor" class11="collaborator"class3="engineer" class4="expert"><response class="compare">“Wait, it might be too long. Let me see.”</response> <action class="tool" "compare">[measures it on blueprint]</action></role></P2>
+<P2><role class="audience"class3="engineer"class4="expert"><response class="evaluates">“yeah, it’s way too long.”</response></role></P2>
+<P2><role class="actor" class4="expert"class3="engineer">“<action class="cutting">[begins cutting]</action></role></P2>  
+<p2><role class="actor"class11="collaborator"><action> stabilizes.</action></role></p2>
+<p6><role class="actor" class2="student"><q>am I doing it this way or this way?</q></role></p6>
+<P2><role class="actor" class4="expert"><response>glue on this side.</response></role> </P2>
+</dialogue>
+<dialogue class="xdomain"> 
+<p6><role class="actor""coach">anna shoot today.</role></p6> 
+<P2><role class="actor"class3="athlete">okay, why are you saying that.</role> </P2>
+<p6><role class="actor""coach">Because you need to shoot.</role></p6> 
+<P2><role class="actor"class3="athlete"><response class="quantitative" "goal">I have to have 35 points today.</response></role></P2> 
+<p5><role class="actor"class3="athlete"><response>35</response></role>,</p5> 
+<P2><role class="actor"class3="athlete"><response>yea…</response></role></P2>
+<p5><role class="actor"class3="athlete"><response class="quantitative" "goal">I thought 22.</response></role></p5>
+<P2><role class="actor"class3="athlete"><response class="quantitative" "goal">35, so I’ll actually get it in the next game and I’ll only need 9 points.</response></role></P2> 
+<p6><role class="audience""coach"><q class="quantitative">how many do you need?</q></role></p6>
+<P2><role class="actor"class3="athlete"><response class="goal">I need 44.</response></role> </P2>
+<p6><role class="audience"class2="student">:<q>how many do you have as you senior?</q></role></p6>
+<P2><role class="actor"class3="athlete"><response class="performance" "gender">1400…wants me to be the most scoring girl in wheeler history.</response></role> </P2>
+<p6><role class="audience"class2="student">:<q>what’s the record right now.</q></role></p6> 
+<P2><role class="actor"class3="athlete"><response class="quantitative" "goal">I don’t know around 1400…1300 something.</response></role> </P2>
+<P2><role class="actor" "fan"><response class="role_change">oh I’m going to the luke bryan concert, my mom is going with me.</response></role></P2>
+</dialogue>
+<dialogue> 
+<p6><role class="actor" class10="dj"  class4="novice">I said they are all my old songs. Alright I’m sorry.</role></p6> 
+<P2><role class="actor"><request class="resources">can I have a popsicle stick real quickly.</request></role> </P2>
+<p5><role class="actor" class11="collaborator"><action class="sharing">'[give popsicle stick]</action></role></p5>
+<P2><role class="actor"class5= "problem_solver"><action class="new_method">[trying to unstick with the popsicle stick]</action></role></P2>
+<p6><role class="actor"class5= "problem_solver" class11="modeler"><request class="goal" "role_assignment">can we glue this part together…its like <action class="id" "problem">[shows a gap in the join]</action></request></role></p6>
+<P2><role class="actor"class5= "project_manager"><response class="decision">yea.</response></role> </P2>
+<p6><role class="actor"class5= "problem_solver" class11="modeler"><explanation class="systems">I <affect>feel</affect> like if its gonna break cause its not like connected.</explanation></role></p6> 
+<P2><role class="actor"class5= "problem_solver"><response class="quick_fix" "challenge">oh well we have that sheet that goes over it.</response></role> </P2>
+
+<P2><role class="audience" class5="evaluator"><declarative class="observation">these got a little wonky.</declarative></role> </P2>
+<p6><role class="audience"  "coach" class4="expert"><declarative class="instruction">wait when you put these down, make sure you pull them tight as you can. <action class="pulls" "stablizes">[helps P5]</action></declarative></role></p6>
+<P2><role class="audience" class4="expert"><explanation class="feedback" "positive">yea, cause these did not stay tight.</explanation></role> </P2>
+<p6><role class="audience" "coach" class4="expert"><declarative class="instruction">pull this as tight as possible, oh can you pull that one down.</declarative></role></p6> 
+<P2><role class="actor" class11="collaborator"><request class="role_assignment">Okay, I’ll hold these ones if you to glue.</request></role> </P2>
+<p5><role class="actor" class11="collaborator"> <action>[starts gluing and placing]</action></role></p5>
+<p2><role class="actor" class11="collaborator"><action>[ holding in place]</action></role></p2>
+<p6><role class="actor" class11="collaborator"><action>[ holding in place]</action></role></p6>
+<p6><role class="actor" class11="collaborator"> <request class="role_assignment">okay, so what should we do next.</request></role></p6> 
+<P2><role class="actor"class5= "project_manager"><response class="goals">we should start to connect it.</response></role></P2>
+<p6><role class="actor"><action class="models" "evaluates">holds up top part to sides. [evaluates]</action></role></p6>
+<p5><role class="audience" class5="evaluator"> <response class="feedback" "positive">I think it goes this way <action>(flips it)</action></response></role></p5>
+<p6><role class="actor" class2="student"><response class="feedback" "positive">I think you’re right.</response></role></p6> 
+<p6><role class="audience" class5="evaluator"class5="evaluator">P6<request class="resources">:we don’t have enough things.</request></role></p6> 
+<p5><role class="actor"   class11="collaborator"><request class="role_assignments" "affect">I can make another one if someone finds the packet.</request></role></p5> 
+<p5><role class="actor" class5="evaluator" class11="modeler"><declarative class="instruction" "observation">when we do it first it fits perfectly.</declarative></role></p5> 
+<p6><role class="actor" class10="performer">how did we mess this up [sound expo]…remember this song-- sound expo.</role></p6> 
+
+<p5><role class="audience"> yes, amazing</role></p5>
+<P2><role class="audience">Memories.</role></P2> 
+<p6><role class="audience"> I did lipsyching this in front of the whole class.</role></p6> 
+<p5><role class="audience"> You know that song holy by flordia georgaline. It was awful.</role></p5> 
+<P2><role class="actor">What did you do?</role></P2> 
+<p5><role class="actor">P5  Eye of the tiger.</role></p5> 
+<P2><role class="actor">were you like assigned.</role></P2> 
+<p5><role class="actor"> yea….I could have had I am Kanye. And not one picked it.</role></p5> 
+<P2><role class="audience">I am Kanye would have been so sick. Can we have a lipsynch battle in this class for I am Kanye.</role></P2> 
+<p6><role class="actor">P6  he said you went crazy for this song and scared me a little bit.</role></p6> 
+<p6><role class="actor">P6  Anna thought you gave me a complement</role></p6>
+<P2><role class="actor">I though you said you look really pretty right now.<action>[singing I am Kanye] </action></role></P2> 
+
+</dialogue>
+    
+<dialogue class="xgroup"> 
+<P2><role class="actor"  ><request class="resources" "sharing">wait do you have an extra one of this.</request></role></P2> 
+<p7><role class="actor">P7  <response class="refusal" "justification">we don’t even have one.</response></role></p7> 
+<P2><role class="actor"  ><request class= "resources">may we please use this for a second.</request></role></P2> 
+<P2><role class="actor"  ><request class= "resources">Do you have your packet out, yeah.</request> <action>[singing]</action></role></P2> 
+
+<P2><role class="actor"><request class= "resources">“May we please have your other rubber cement.”</request></role></P2>
+<p9><role class="actor"  ><response class="refusal" "sharing"> “No.”</response></role></p9>
+<p7><role class="actor"> “<q class="in-group">What do we vote.</q> I vote no.”</role></p7>
+<P10><role class="audience" class2="teacher">“wait, wait, wait, wait.”</role></P10>
+<P10><role class="audience" class2="teacher"><explanation class="efficiency">“You guys are about to be in the position where the other two groups are going to be done and could be able to help you.”</explanation></role></P10>
+<p7><role class="audience" class2="student"><response class="challenge" "school">“Yea, but then we also have to do it at home, so why would we give them the rubber cement, cause that means their finished and we have to do it for homework.”</response></role></p7>
+<P2><role class="actor"   class2="student" >“Or if we all help you in class, you won’t have any homework and I’ll have to do twice as much work.”</role></P2>
+<p7><role class="actor"> “I mean that’s fine if that’s a possibility.”</role></p7>
+<p5><role class="actor"><action>[cuts and measures the piece; </action></role></p5>
+<P2><role class="actor"><action>folds it;</action></role></P2> 
+<p6><role class="actor"><action>P6 glues it</action></role></p6>
+<p6><role class="audience"  class5="evaluator"> Anna you folded it wrong</role></p6>
+<P2><role class="actor"  ><q>how did I fold it wrong</q></role></P2>
+<p6><role class="actor"  > <response>oh wait I glued this wrong.</response></role></p6> 
+</dialogue>
+    </perspective2>
+    
+</section>
+<section class="session_3">
+<Perspective01 class="perspective"> 
+<dialogue class="biology"> 
+<p3>P3  <role class="actor"><action class="adopted_method">[using exacto knife to unstick the other side of the bridge]</action></role></p3> 
+<P01><role class="actor"><action class="new_method">[using exacto knife to unstick the other side of the bridge]</action></role></P01>
+<P01><role class="actor" class2="student"  class4="novice"class8= "insider"><response class="evaluation" "self" "understanding">I was so confused on the <assignment>bibliography</assignment> I’m not gonna lie.</response></role></P01> 
+<p3><role class="actor" class2="student"  class4="novice"class8= "insider"><response class="evaluation" "self" "performance">Yea. I definitely did it wrong then. Like completely wrong</response></role></p3>
+<P01><role class="actor" class2="student"class8= "insider"><q class="performance" "clarification">how many websites did you use</q></role></P01>
+<p3><role class="actor" class2="student"><response>P3  I did 2 websites, no 1 website. 2 articles.</response></role></p3> 
+    <P01><role class="audience"class5="evaluator" class2="student" class8= "insider">you were supposed to use 4.</role></P01> 
+<p3><role class="actor" class2="student">P3  oh I have another I can use then.</role></p3>
+<p2> <role class="audience" "secondary" class2="student"><q class="clarification">which class?</q></role></p2>
+<P01><role class="actor"><response>You wouldn’t know about it cause youre in <xdomain>physics</xdomain> which is an easier class.</response></role></P01> 
+<p3><role class="audience" class5="evaluator"> Yea. That’s not true.</role></p3> 
+<P01><role class="actor"> yea it is. Sorry anna.</role></P01> 
+<dialogue> </dialogue>
+<P01><role class="actor" class5="project_manager"  >now we have to do the middle. The middle looks confusing.</role></P01> 
+<P10><role class="audience" class2="teacher" class4="expert"><response class="feedback" "constructive">Actually this one is more confusing, but it looks like your missing some pieces.</response></role> </P10>
+<P01><role class="audience" class5="problem_solver" class2="student"class4="novice">we have to be, cause there is so many left.</role></P01> 
+<P10><role class="audience"class4="expert" class2="teacher"><response class="sarcasm">excellent observation, andy.</response> So do you see how there are two sets of ….[see other transcript]</role></P10>
+<P10> <role class="actor""coach">do <p8>you</p8> want me to get you a ruler cause I think that would really help you get the edges straight. Wait your missing the lesson. I hear you, but I think this would be much faster and I want you to learn how to use this very simple tool.</role></P10> 
+<P10><role class="audience" class2="teacher"><q>So chloe is just gone then</q></role></P10>
+    <P01><role class="audience">so is drew</role></P01>
+    <P10><role class="audience" class5="evaluator"><q>its suppose to be your skip day on Friday.</q></role> </P10>
+<p3><role class="actor"><response>P3  except it got shut down. Someone definitely said something about it. How can you not keep your mouth shut when your right next to stykes office</response></role></p3>. 
+[see other transcript]
+<P01><role class="actor"class3="athlete">I do, I have practice</role></P01>
+<P01><role class="actor" class11="collaborator">We don’t need these pieces</role></P01> 
+<p3><role class="actor" class11="collaborator" class4="expert"> yea. I think we do.</role> </p3>
+<P01><role class="actor"class3="athlete">no one knew about it.</role> </P01>
+<p3><role class="actor"class3="athlete"> It’s just bad scheduling. Yea. That sucks. Especially on senior night.</role></p3> 
+<p3><role class="actor"class3="athlete"> <response class="concession">But we also had no seniors.</response></role></p3> 
+---------
+<P01><role class="audience" class2="student" class8="insider"><school>ours</school> does not do that. Yea, wheeler does not. <school>Yea, we were told not to cheer too loud. Yea, we should cheer the other team on too.</school></role></P01> 
+<P01><role class="audience" class3="athlete" class8="insider"><declarative class="role_change">Anna drop it.</declarative></role></P01> 
+<P2><role class="actor"><affect>I’m so annoyed.</affect></role> </P2>
+-----review period. 
+<p3><role class="actor" "project_manager"><request class="role_refusal"> let’s just keep building.</request></role></p3> 
+<P01><role class="actor" "project_manager">keep building I’m just getting this ready.</role></P01> 
+<p3><role class="actor" class2="student" class8="insider"><xdomain> I’m so screwed for bio <action>[shows him an email]</action></xdomain></role></p3>
+<P01><role class="audience" class2="student" class4="novice"class8= "insider"><xdomain><affect>I’m screwed for bio.</affect></xdomain></role></P01> 
+<xdomain><quote class="email">“please redo your bibliography. Every possible error that I demonstrated is on what you submitted and I can’t even tell if what each source is because it is not obvious if it is a journal or a website. You have the information to do this correctly.” –donna lizotte.</quote></xdomain> 
+<p3><role class="actor" class2="student"><xdomain> she sent it yesterday.</xdomain></role></p3> 
+<P01><role class="actor" class2="student"><xdomain>and you didn’t send it.</xdomain></role> </P01> 
+<p3><role class="actor" class2="student"><explanation>No, I didn’t see it.</explanation></role></p3>
+<p3><role class="actor"class5= "project_manager"class3="engineer"> We have to start laying those right here. These are the <engineering>portal bracing</engineering>.</role></p3> 
+<P01><role class="actor"class5= "project_manager">its cause we’re working on this. Alright get more of those.</role></P01>
+<P01><role class="actor"class11="collaborator"><request class="role_change">Alright now can I get the glue or what</request></role></P01>
+
+<P01><role class="actor" class3="engineer">the <engineering>top struts</engineering> [incorrect]</role></P01>
+<P01><role class="actor" class3="engineer"><engineering>top lateral bracing</engineering> [correct]</role></P01>
+<p3><role class="actor"> I don’t where all these are</role></p3>
+    <P01><role class="audience" class3="engineer">they are right here <engineering>15x4</engineering></role></P01>
+<p3><role class="actor"class11="collaborator"><q class="clarification"> <affect>what the hell are these for?</affect> we have not touched these.</q></role></p3> 
+<p3><role class="actor" class3="engineer"> <engineering>top lateral or vertical</engineering>.</role></p3>
+    
+<P01><role class="actor" class5="problem_solver" class3="engineer">oh there this one. Obviously. yes it is cause there are <engineering>eight</engineering> of them.</role> </P01>
+<p3><role class="audience"> alright.</role></p3> 
+<p3><role class="actor" class2="student"><xdomain> Yea. I got to work on the bio thing.</xdomain></role></p3> 
+<P01><role class="actor" class2="student"><xdomain>and we have a history thing too.</xdomain></role></P01>
+<p3><role class="actor"class11="collaborator" class5="evaluator"><q> so you don’t have to put anything on the top here. It just doesn’t look like.</q></role></p3> 
+<P01><role class="actor"class5= "problem_solver" class3="engineer"><xgroup>ask them...Ryan, what did you guys use on this one—the <engineering>10x4. 11x4?</engineering> But they barely fit. They have to be…<engineering>they are the only ones with 8 pieces.</engineering></xgroup></role></P01> 
+<P01><role class="audience" class2="student" ><q class="evaluation" "clarification"><xdomain>she said everything is wrong as possible?</xdomain></q></role></P01> 
+<p3><role class="actor" class2="student" ><response>P3yea.</response></role></p3> 
+<P01><role class="actor" class2="student" ><response class="sarcasm">I can’t wait to get mine. I said I’ll send it to you by 6 o clock tomorrow. She said you should have done this earlier. <affect>I was like oh shit.</affect></response></role> </P01>
+<p3><role class="actor" class2="student" > <affect>I’m rattled.</affect></role></p3> 
+<P01><role class="audience"class8= "insider"><response>I can tell.</response></role></P01> 
+<p3><role class="actor" class2="student" > <response class="evaluation" "performance" "self" "incorrect">I thought I picked  good sources, and then she <affect>destroyed</affect> me. <performance>She said everything I did was wrong. Everything I could have done wrong is wrong</performance></response></role></p3>. 
+<P01><role class="audience"class8= "insider">youre so rattled.</role></P01> 
+<p3><role class="actor" class2="student" > <response class="evaluation" "performance" "self"><performance>everything I could have possibly done wrong is wrong.</performance></response></role></p3> 
+<P01><role class="audience"class8= "insider">what do you mean for a month? What is she possibly going to do in florida for a month?</role></P01>
+<p3><role class="audience"class8= "insider"> horses</role></p3>
+<P01><role class="audience"class8= "insider">horses…I didn’t know she rode horses.</role></P01> 
+<p7><role class="actor"class10="performer"><joke> local providence boy crashes into a pony bridge</joke></role></p7>
+<P10><role class="actor" class2="teacher" class8="insider"><joke class="joint">is able to identify all parts of the bridge.</joke></role></P10> 
+<p7><role class="actor"class10="performer"><joke> license plate, chloe.</joke></role></p7> 
+<p3><role class="actor"class5= "project_manager"><response class="level" "revaluation"> This top part is so easy actually. We should have done this first.</response></role></p3> 
+<p3><role class="actor" class2="student" ><xdomain> dude mis lazzad. <affect>She is going to kill me</affect> in class too.</xdomain></role></p3> 
+<P01><role class="actor" class11="collaborator"class8= "insider">that’s the wrong piece kid.</role></P01> 
+<p3><role class="actor" class11="collaborator"class8= "insider"> no its not…<affect>you can’t joke around me right now</affect>.</role></p3> 
+<P01><role class="audience" class8="insider">so rattled.</role></P01> 
+
+<p3><role class="actor"> <strategy class="new">I’m going to use a toothpick and put glue on there.</strategy></role></p3>
+<p3><role class="audience" class5="evaluator" class11="collaborator"> That’s good, Andy</role></p3>
+<P01><role class="actor" class11="collaborator"><q class="clarification">Now what do we do</q></role></P01>
+<p3><role class="actor" class11="collaborator" class4="novice"> I have no clue.</role></p3> 
+<P01><role class="actor" class11="collaborator"><q>what about this piece?</q></role></P01>
+<p3><role class="actor" class11="collaborator"> <response>we have to let that dry</response></role></p3>
+<P01><role class="actor" class5="project_manager">oh let’s do this.</role></P01>
+<p3><role class="actor" class11="collaborator"> yea, let’s double that up then.</role> </p3>
+<P01><role class="actor" "competitor">Anna we’re coming for you guys [goes over to check out G1’s bridge]</role></P01>
+<p3><role class="actor" class5="evaluator"> We’re actually so much more productive without P4.</role></p3> 
+<P01><role class="actor" class5="evaluator">yea, I feel bad.</role></P01> 
+</dialogue>
+
+<p3><role class="audience" class2="student" class8= "insider">P3  I didn’t know they let kids do that</role></p3>
+<P01><role class="audience" class5="evaluator">how much money are you making</role></P01>
+<p3><role class="audience" class2="student" class8= "insider"> I would have mowed lawns at Bryant. I live right there.</role></p3> 
+<P2><role class="audience" class8="insider">we should hang out.</role></P2> 
+<P01><role class="audience"class8= "insider">you guys should hang out. That’s what I was thinking, anna.</role> </P01>
+<p3>P<role class="actor">3:I got kicked off the lacrosse field by the girl coach because I was hanging from the goal post.</role></p3>  
+
+<p3><role class="actor" class11="collaborator"> Now what do we do.</role> </p3>
+<P01><role class="actor"class5= "project_manager" class11="collaborator">we double it. Do we have to do the gusset plates again.</role></P01> 
+<p3><role class="actor"class5= "project_manager"class11="collaborator"> Okay so we should do these first and then put the gusset plates on top. So you want to put these here, here, and here.</role></p3> 
+    <P01><role class="actor" class11="collaborator">yea.</role> </P01>
+
+<event>[sarge leaves for the bathroom]</event>
+<P01><role class="audience" class2="student" class5="evaluator">sarge is done. His eye hurts.</role></P01>
+<P01><role class="audience" class2="student" class5="evaluator">Oh my god. Every class. He goes so much</role></P01>
+<P01><role class="audience" class2="student" class5="evaluator"><xdomain>In Bio, he gets up a 100 times.</xdomain></role></P01> 
+
+<P01><role class="audience" class2="student" class5="evaluator"><performance>You guys are like 5 classes behind.</performance></role></P01>  
+<p7><role class="actor" class5="evaluator"> <response class="compare" "self">we’re just as good as any group.</response></role></p7> 
+<p3><role class="audience" class2="student" class5="evaluator"> you just keep telling yourself that</role></p3> 
+<P01><role class="actor" class10="dj" ><request class="role_change">who wants to put some music on</request></role></P01>
+<p3><role class="actor"class5= "problem_solver" class11="modeler" class3="engineer"> we can do it like that, since it’s not long enough to go from here to here…we have to use the <engineering>gusset plate</engineering>.</role></p3> 
+<P01><role class="actor" class11="collaborator" class5="evaluator">why did you put the glue on this side.</role> </P01>
+<p3><role class="actor" class11="collaborator" class3="engineer">P3  <explanation>Because I thought it would be long enough…and we double the <engineering>gusset plates</engineering> on the top anyways.</explanation></role></p3> 
+<p3><role class="actor"class5= "problem_solver" class11="modeler">P3  what we can do is we can simply lay them like this.</role></p3> 
+<P01><role class="actor" class10="dj" >let me put a little throwback.</role></P01> 
+<P01><role class="audience" class5="evaluator" class11="collaborator">I legit haven’t done any work. <affect>I feel bad</affect>.</role> </P01>
+<P01><role class="audience" class5="evaluator" class11="collaborator">I feel bad. I really haven’t done anything. <explanation class="roles">I mean it’s really just a one person work.</explanation> <gluer>I can do the glue.</gluer></role></P01> 
+<p3><role class="actor" class5="project_manager" class11="collaborator"> <response class="role_assignment">you can do the other one.</response></role></p3> 
+<P01><role class="actor" class11="collaborator"><response class="role_refusal">oh yea. I will, but I like it when we do it together. Do we have time to start this one…nah. </response><q>are we done?</q></role></P01>
+<p3><role class="actor"class5= "project_manager"> <response>yea.</response></role></p3> 
+</Perspective01>
+<perspective2 class="perspective"> 
+<p2><role class="audience"class5= "project_manager">Now we are all groups of two.</role></p2> 
+<p2><role class="actor"class11="collaborator"><q>Do you want to help me out?</q></role> </p2>
+<p2><role class="actor" ><action>[unsticking the second side of the bridge—same as yesterday]</action></role></p2>
+
+<P10><role class="actor" class2="teacher"><individual>I</individual> did want to spend some time reviewing for the <evaluation class=performance>quiz</evaluation> that’s on Friday. Hopefully when more people are here. That’s on Friday.</role></P10> 
+
+<dialogue class="interactive""joint"> 
+<p2><role class="actor" class2="student" class4="novice">I <affect>wish</affect> somebody had said we should</role></p2> 
+<p5><role class="actor" class2="student" class4="novice"><q>P5not glue it to the paper?</q></role></p5>
+<p2><role class="audience">yea</role></p2>
+<p5><role class="audience"> yea</role></p5>
+<p5><role class="actor" class5="project_manager">P5<request class="resources">we need the gusset plate</request></role></p5>
+<p2><role class="audience"class11="collaborator">okay</role></p2>
+
+<p5><role class="actor" class5="project_manager"class11="collaborator"><request class="role_assignment">P5can you hold up the other side?</request></role></p5>
+<p5><role class="audience"class5="evaluator"class11="collaborator">Let’s see how it looks</role></p5> 
+<p5><role class="actor"><action class="model">[putting together the 3 parts]</action></role></p5>
+
+<P01><role class="audience" class5="evaluator">it doesn’t go quite all the way.</role></P01>
+<p2><role class="actor" class5="problem_solver"><q>Does it now</q></role></p2>
+    <P01><role class="audience"class5="evaluator">No cause that one is flat</role></P01>
+
+<p2><role class="actor"class4="novice"><evaluation class="self"><individual>I have no ideas</individual>, Omg, <individual>I actually can’t…</individual></evaluation><request class="resources">Where’s chloe?</request></role></p2>
+<p5><role class="audience"class11="collaborator"class8= "insider"><affect>You’re so mean. You hurt my feelings a lot…it’s okay, I can handle it.</affect></role> </p5> 
+</dialogue>
+
+<dialogue class="xgroup">[cross talk with other group—see other transcript]
+
+<p2><role class="audience" "secondary"class8= "outsider"><q>What subject are you talking about?</q></role></p2> 
+<p3><role class="actor">P3Bio.</role></p3> 
+<P01><role class="actor"class5="evaluator" class8="insider">You wouldn’t know about it. <xdomain>You’re in physics, which is an easier class.</xdomain> Sorry</role></P01>
+<p2><role class="audience"><response>just asking. Sorry.</response></role></p2> 
+
+<p8><role class="actor"class4="novice">Oh my.</role></p8> 
+<p3><role class="audience"class4="expert">All you have to do is cut it</role></p3>
+<p8><role class="actor"class4="novice">I know</role></p8> 
+</dialogue>
+
+<dialogue> 
+<p5><role class="actor" class5="project_manager">We have to glue these on</role></p5>
+<p2><role class="audience" ><q class="resources">with rubber cement or wood glue</q></role></p2>
+
+<p2><role class="audience" "secondary"><action class="compare">observing other group</action></role> </p2>
+<p5><role class="audience" "secondary"  ><action class="compare">observing other group</action></role> </p5>
+<P10><role class="audience"class4="expert" class5="evaluator">your missing some things from this one.</role></P10> 
+<P10><role class="audience" class2="teacher"><action class=model>[brings over the model]</action></role></P10>
+<P10><role class="actor"><q class="guided">So like do you see how there are two sets of diagonals on each of these?</q></role></P10>
+<p3><role class="audience">yea.</role></p3> 
+<P10><role class="actor" class4="expert">you want to glue another one</role> </P10>
+
+<p2><role class="actor" class5="project_manager">with wood glue. <request class="role_assignment">Want to get the wood glue.</request></role></p2> 
+<P10><role class="audience"class4="expert" class5="evaluator"><action class=model>[observes groups progress. Brings over model]</action></role></P10>
+<P10><role class="audience"class4="expert" class5="evaluator" class3="engineer">Okay, nice. There’s going to be one more <engineering>gusset plate</engineering>. Like here on the <engineering>hip verticals</engineering>.</role> </P10>
+<p5><role class="audience">oh.</role> </p5>
+<p2><role class="actor" class5="project_manager"class11="collaborator">Oh should we glue that first</role></p2>
+<p5><role class="audience" class5="project_manager"class11="collaborator">yea.</role></p5>
+</dialogue>
+    
+<p2><role class="actor" class8="insider">I don’t know if I said this to you or if I just said it in my head, but I found my glasses.</role></p2> 
+<p5><role class="actor" class8="insider">P5I hate eating bananas in public.</role> </p5>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">…holds up <engineering>gusset plates</engineering></action></role></p2>
+<p2><role class="audience">cap has a boyfriend….</role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2>
+<P10><role class="audience"  class2="teacher"><q>so chloe is just gone now.</q></role></P10> 
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role></p2> 
+<p2><role class="audience" class3="engineer"><action class="model">[looks at model]</action></role> </p2>
+
+
+<dialogue class="xgroup" class="relational"> 
+<p2><role class="actor" class3="athlete"><q>how was your hockey game?</q></role></p2>
+<p3><role class="actor" class3="athlete"><response> uh, we tied 2 to 2 on Friday night and we won…what was the score-Saturday? Uh…we won senior night which was really what matters</response> </role></p3>
+<p2><role class="audience" class3="athelete">so true.</role> </p2>
+
+<P10><role class="audience">good luck at your senior game.</role></P10>
+<p5><role class="actor">P5you should come</role></p5>
+<P10><role class="audience">I unfortunately have plans…I didn’t know about it.</role></P10> 
+<p2><role class="actor">Come.</role></p2> 
+<p5><role class="actor">P5your coming right?</role></p5>
+<p2><role class="actor">Sarge youre coming right</role></p2>
+<p8><role class="audience"> no.</role> </p8>
+<p2><role class="actor" class3="athlete" class2="female"><affect class="inequity">What, this is so annoying!</affect> <evaluation class="compare" "gender""quantitative">Literally so many people went to the boys one.</evaluation></role> </p2>
+<P01><role class="audience" class3="athlete" class8="insider"><explanation class="justification">It was also on a Friday.</explanation></role> </P01>
+<p5><role class="actor" class3="athlete" class2="female" class8="insider">P5  <response>yea. It’s a Tuesday.</response></role> </p5>
+<p2><role class="actor" class3="athlete" class2="female" class8="insider"><response class="challenge"><affect class="inequity">I’m sorry does that mean you guys have plans! Literally, you don’t even have homework, tonight!
+You don’t…you literally don’t!</affect></response></role> </p2>
+<P01><role class="actor" class3="athlete"class8= "insider"><explanation class="justification" "self">I have practice,</explanation></role></P01> 
+<p3><role class="actor" class3="athlete"class8= "insider"><explanation class="justification""in-group"> sarge and I have practice</explanation></role></p3>
+<p2><role class="actor" class3="athlete" class8="insider"><response class="challenge">okay that’s a … at 6 o clock.</response></role></p2> 
+<p3><role class="actor" class3="athlete"class8= "insider"><explanation class= "justification"> Its at 5, don’t get out of the ring till six…got to bring my brother home.</explanation></role></p3> 
+<p2><role class="actor" class3="athlete"class8= "insider">sarge.</role></p2> 
+<p8><role class="actor" class3="athlete"class8= "outsider"> oh no.</role> </p8>
+<p2><role class="actor" class3="athlete" "senior"><affect class="ethics">That’s just really mean.</affect> <explanation class="performance" "equity">Think about all the hard work that these seniors put in!</explanation></role> </p2>
+<P10><role class="audience" class2="teacher""coach">Oh wow, just when I thought it was going to be me and owen today.</role></P10> 
+[all of G3 is present now]
+<p2><role class="actor" class3="athlete" "senior"><affect>That is actually so annoying. I’m really mad right now</affect>.</role></p2> 
+<p5><role class="actor" class5="problem_solver"class5= "project_manager" class8="insider"> tell them why they should come.</role> </p5>
+<p2><role class="actor" class3="athlete"  class2="female"><explanation class="performance" "inequity" "gender">Like why….we’re literally…better than the boys!</explanation></role></p2>
+<p3> <role class="audience" class2="student"class3="athlete">I don't know why they put it on a tuesday</role></p3>
+<p2><role class="actor" class3="athlete">Well, it’s the last home game.</role></p2> 
+<P10><role class="actor"><request class="justification" class="role_exchange">I wish you’d emailed people about it.</request></role></P10> 
+<p2><role class="actor""communicator" class3="athlete"><response class="role_accepted">we sent out an email last night.</response></role></p2> 
+<P10><role class="actor" class2="teacher" class8="insider">not to the teachers.</role></P10> 
+<p2><role class="audience" class3="athlete"><affect>oh seriously….well, this is just really annoying!</affect></role></p2> 
+
+<p5>P5<role class="actor" class3="athlete" class8="insider"><action>[points to teacher outside]</action> <response class="challenge">she’s coming to the game</response></role></p5>
+<P10><role class="actor" class2="teacher"><q class="role_exchange">are you going to this game.</q></role></P10> 
+<p7> <role class="actor"><q>which game?</q></role></p7>
+<P10><role class="audience">Well, their playing….</role></P10>
+<p2><role class="actor" class3="athlete" class8="insider"><affect>Oh my god I want to break this in half</affect></role></p2>! 
+<p5> <role class="actor" class3="athlete" class8="insider">no one’s coming. </role></p5>
+<P10><role class="audience"><affect>Oh guys, you’re making me feel bad.</affect> <response class="ethics" "self">The thing that I had to go to is my gym class.</response> 
+<explanation>Yea, <affect>of course I feel bad</affect>…going to support high school teams were some of my favorite memories.</explanation></role></P10> 
+<p2><role class="actor" class3="athlete"><affect>its just students, its so annoying.</affect> <evaluation class="compare""quantitative" "gender">How many people went to your game?</evaluation></role></p2> 
+<p3><role class="actor" class3="athlete"class8= "insider"> <response class="compare" "qualitative">nobody from wheeler.</response> </role></p3>
+<P01><role class="actor" class3="athlete"class8= "insider" "gender"><response class="equity">did you go to his game?</response></role></P01>
+<p2><role class="actor" class3="athlete"><response>no.</response></role></p2> 
+[p5we also….see other transcript]
+
+<P10><role class="audience" class2="student">And our boys soccor team in high school was like winning championships and the school organized buses to go out to like Hershey park. <school>When you’re cancelling class to go support sports teams, its so fun.</school></role></P10> 
+
+<p5><role class="audience" class2="student"class3="athlete"> <response class=role_id><school>They</school> would never pick sports over academics.</response></role></p5> 
+<p2><role class="actor" class3="athlete" class8="insider" class2="female" "communicator" "senior">Oh wait you went to the boys senior game. We sent an email!</role></p2>
+<p7><role class="audience"class3="athlete"><response class="justification"> I can’t tell if its that or the book club she’s sending me.</response></role></p7> 
+<p2><role class="actor" class3="athlete" class2="female"><affect>I’m so annoyed! Oh my.</affect></role> </p2>
+</dialogue>
+    
+<dialogue class="review"> 
+<P10><role class="actor" class2="teacher">Okay, so I wanted to start reviewing for the quiz. I’ll probably do this again on Thursday. </role></P10>
+<P10><role class="actor" class2="teacher"><q class="perspective" "recall">What kind of view is this?</q> <q>Anyone remember?</q></role> </P10>
+<P10><role class="actor" class2="teacher" class3="engineer"><reponse class="self" "prompt" "perspective" "recall">It’s not the <engineering>isometric</engineering> it’s the other one.</reponse></role> </P10>
+<p2><role class="actor" class2="student"><response class="answer" "recall">side view</response></role> </p2>
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="evaluation" "answer" "feedback" "positive" "corrective">yes, or <engineering>elevation</engineering>.</response></role> </P10>
+<P10><role class="actor" class2="teacher"><q class="recall" "vocabulary">What’s the name of the top part of the bridge that this is pointing to?</q></role></P10> 
+<p5><role class="actor" class2="student">P5  top</role></p5>
+<p2><role class="actor" class2="student" class3="engineer"><response class="recall">is that not the <engineering>top chord</engineering></response></role></p2>
+<P10><role class="audience" class2="teacher" class3="engineer"><response class="feedback" "positive">it is! That is the <engineering>top chord</engineering></response></role></P10> 
+<P10><role class="actor" class3="engineer"><q class="followup" "recall" "vocabulary">How about when the <engineering>top chord</engineering> comes down at the end here? </q></role></P10>
+    <P10><role class="audience" class2="teacher" class3="engineer"><response class="self""prompt">They’re called the <engineering>end</engineering></response></role></P10>
+<p2><role class="audience" class2="student" class3="engineer"><response class="recall" "fluency" "vocabulary" "incorrect"><engineering>chord</engineering></response></role></p2>
+<p5><role class="audience" class2="student"><response class="recall" "fluency" "vocabulary" "correct"> posts</response></role></p5>
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="feedback" "positive">yes, <engineering>end posts</engineering>.</response></role></P10> 
+<p2><role class="actor" class2="student" ><response class="evaluation""compare" "performance" "role_id">did you study or something…youre so smart.</response></role></p2> 
+<p5><role class="actor" class2="student" ><response class="role_acceptance"> I can’t even see it.</response> <action>[not facing the screen]</action></role></p5>
+<P10><role class="actor" class2="teacher" class3="engineer"><q class="recall" "vocabulary">the <engineering>verticals</engineering> at the ends of the bridges are called the</q> <response class="answer" "self"><engineering>hip Verticals</engineering></response>.</role></P10> 
+    <P10><role class="actor" class2="teacher"><q class="recall" "vocabulary">Okay, the pieces that are going diagonally, we call those...</q></role></P10>
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="feedback" "positive">Yes. <engineering>The diagonals.</engineering></response></role></P10>
+<P10><role class="actor" class2="teacher"><evaluation class="participation" "performance">So, if people aren’t answering…I hope its because your feeling overly confident.</evaluation></role> </P10>
+<P10><role class="actor" class2="teacher" class3="engineer"><fact>This gray part that sits above the <engineering>bottom chords</engineering> of the bridge, that’s the <engineering>deck</engineering>.</fact></role></P10> 
+<P10><role class="actor" class2="teacher"><q class="perspective" "recall" "vocabulary">Alright…what kind of view is this?</q> </role></P10>
+<p2><role class="actor" class2="student" class3="engineer"><response class="recall" "vocabulary" "engineering">Isometric.</response></role></p2> 
+<P10><role class="actor" class2="teacher" class3="engineer"><fact>this weird section right here that looks like its melting is actually just the <engineering>deck</engineering> pulled away so you can see underneath.</fact></role></P10> 
+<P10><role class="actor" class2="teacher"><q class="recall" "prompt" "vocabulary">Alright…so what are these gray pieces that are connecting the two halves…that some of you are finally figuring out how to attach right now.</q></role> </P10>
+<P10><role class="actor" class2="teacher"><q class="recall" "prompt" "vocabulary">What are you guys trying to attach to your bridge right now.</q></role></P10> 
+<p5><role class="actor" class3="engineer"><action>[turns to look at diagram]</action> <response class= "recall" "vocabulary"><engineering>floor beams</engineering></response> </role></p5>
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="feedback" "positive" "quantitative">yes. <engineering>Floor beams.</engineering> 2 points for ryan.</response></role></P10> 
+<P10><role class="actor" class2="teacher"><q class="recall" "prompt" "vocabulary">How about these exes that are at the top of the bridge.</q></role></P10> 
+<p8><role class="actor" class2="student" class3="engineer"> <engineering>Top lateral</engineering>.</role></p8>
+<P01><role class="audience" class2="student" class8="insider"><response class="feedback" "positive">yes…<action>[high five]</action> let’s go.</response></role></P01> 
+<P10><role class="actor" class2="teacher" class3="engineer"><response class= "feedback" "positive">Yes, the <engineering>top lateral bracing</engineering></response>. <fact>When they come down the sides here, they are now the <engineering>portal bracing</engineering> because these <engineering>struts</engineering> here are the <engineering>portal struts</engineering> at the ends of the bridges.</fact></role></P10>
+
+<P10><role class="actor" class2="teacher" class3="engineer"><q class="recall" "vocabulary">What kinds of connections are these?</q> <fact>These are the two kinds of connections we can use to connect.</fact> <q>What’s the one on the left here?</q> <response class="Self" "answer">Okay, this is a pin connection. So this thing right here is the actual pin.</response> <q class="recall" "vocabulary">What kind of connection is this? </q><response class="self" "prompt">Your cutting these out right now.</response></role> </P10>
+<p7><role class="actor" class2="student" class3="engineer"> <engineering>gusset</engineering> </role></p7>
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="feedback" "positive" "guided">Yes, this is the <engineering>gusset plate</engineering> connection. So if your cutting these out which design is our bridge using.</response></role></P10> 
+<p7><role class="actor" class2="student" class3="engineer"> <response class="recall" "vocabulary"><engineering>gusset</engineering></response></role></p7>
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="elaboration" "fact">so you can see that the <engineering>gusset plate</engineering> connection just has a bunch of <engineering>rivets</engineering> attaching these different beams together. 
+    And actually I think there is enough information in these images to start to identify what kinds of members we’re looking at here. Like this to me looks like a <engineering>top chord</engineering>, this is the <engineering>endpost</engineering>, we’ve got a <engineering>hip vertical</engineering>, and a <engineering>diagonal</engineering>. This does not look like the end of a bridge because you can see that the bottom part continues through. So this is…we’ve got two <engineering>diagonals</engineering> here and a <engineering>vertical</engineering>.</response></role> </P10>
+
+<P10><role class="actor" class2="teacher"><q class="simulation">What can happen when one of these members is bent or broken?</q></role></P10>
+<p2><role class="actor" class2="student" ><response class="recall">it could lack stability.</response></role> </p2>
+<P10><role class="actor" class2="teacher"><response class="feedback" "positive" "elaboration" "application" "systems">yea, so maybe it wouldn’t give out right away, but part of the reason why bridges have to be inspected every year is because even if something is bent but withstanding the load right now, you never know when that break could get worse and the bridge could collapse.</response></role></P10> 
+
+<P10><role class="actor" class2="teacher"><response class="application" "global" "systems">I used to talk about this more before I realized it was a lot more like doomsday, but bridge collapses are not really like a thing of the past yet. We definitely see bridges collapsing all the time. Unfortunately it is more common in developing countries right now where they lack sufficient oversight in the construction process and maybe aren’t working with the best quality materials. But this Wikipedia site which you should not site in your papers seems to list places in china, finland. Actually I think in China they executed a guy after his bridge collapsed.</response></role></P10> 
+
+<p7><role class="audience"class4="novice"> <q class="ethics">Why</q></role></p7>
+<p2><role class="actor" class2="student" ><explanation class="perspective_taking">Cause his bridge collapsed.</explanation></role> </p2>
+<P10><role class="actor" class2="teacher"><fact>Kim Jung Il definitely did it in North Korea</fact></role></P10>
+<p7><role class="audience" class4="novice"> <response class="role_id">That guy is kind of nuts</response></role></p7>
+<P10><role class="actor" class2="teacher"><response class="continuer">yea</response></role>.</P10> 
+
+<dialogue class="in-group"> 
+<p2><role class="actor"class11="collaborator"><response class="role_exchange">no worries ryan. I’ll do this.</response></role></p2> 
+<p5><role class="actor" class5="project_manager"class11="collaborator">P5<request class="role_change">want to do all the gusset plates and then do that</request></role></p5>
+<p2><role class="actor"class11="collaborator"><response class="explanation" "procedural">I was going to but then I just found myself putting glue on this.</response></role> </p2>
+</dialogue>
+<P10>T<role class="actor" class2="teacher" class3="engineer">his is your page Alex. <q class="recall" "vocabulary">Which of these is the <engineering>abutments</engineering> and which.</q></role></P10> 
+<p9><role class="actor">P9The left is the audoman</role></p9>
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="feedback""corrective">The <engineering>abutments</engineering></response>. You’ve got one on either side.</role></P10> 
+<P10><role class="actor" class2="teacher" class3="engineer"><q class="identification" "recall">Okay, I think this is the last slide. There are three kinds of <engineering>trusses</engineering>. I think the deck truss is the easiest to identify because the car is just on the top of the bridge.</q></role></P10> 
+
+<p2><role class="actor" class2="student" class3="engineer"><engineering>pony truss</engineering></role></p2>
+<p9><role class="audience" class4="novice""driver">P9That seems like really unsafe.</role></p9> 
+<P10><role class="actor" class2="teacher" class3="scientist">Believe it or not whether you have it like this or flip it upside down and install it as a <engineering>deck truss</engineering>, it’s literally going to be the exact same. That’s something that we can actually test.</role> </P10>
+<p2><role class="actor" class2="student" class3="engineer"><engineering>A pony truss.</engineering></role> </p2>
+<P10><role class="actor" class2="teacher" class3="engineer"><q class="compare" "explain">what is the easy way to tell the difference between a through <engineering>truss</engineering> and a <engineering>pony truss</engineering>?</q></role></P10> 
+<P10><role class="actor" class2="teacher" class3="engineer"><response class="self" "explanation""application">A through <engineering>truss</engineering>, the traffic literally goes through the bridge. Like in providence most bridges that lead you on an off the highway are through <engineering>trusses</engineering> because the height of the bridge is way above the cars that are traveling through it.</response></role></P10> 
+<P10><role class="actor" class2="teacher"><response class="self""explanation">A <engineering>pony truss</engineering>—like a diminutive horse—a pony truss its like doesn’t—the sides of the bridge do not go above the truck. Okay so that’s it for the review.</response></role></P10> 
+
+<P10><role class="actor" class2="teacher" class3="engineer">It is going to focus on identifying different parts of the bridge and what’s going on with a <engineering>gusset plate</engineering> connection</role> </P10>
+</dialogue>
+<dialogue> 
+<P10><role class="actor" "peer"><fact class="perspective-taking" "global">Amin Yashid--I’m obviously not in your shed</fact> </role></P10> 
+<p2><role class="audience"><response class="sarcasm">oh well, maybe you can come meet her again tonight.</response></role></p2> 
+<p2><role class="actor"class3="athlete"  class2="female"><affect>This is actually sort of depressing</affect></role></p2>
+<p5><role class="actor"   class11="collaborator"><q class="clarification">our bridge?</q></role></p5>
+<p2><role class="actor"class3="athlete"><response class="equity""performance">we deserve to have people come</response></role></p2>
+<p5><role class="audience"><explanation class="comparison">they lost like three times right</explanation></role></p5>
+<p2><role class="audience"><response class="comparison">yea. They lost their senior game.</response></role></p2> 
+<p5><role class="actor"class3="athlete"><response class="perspective-taking">with all those people there</response></role></p5>
+<p2><role class="actor"class5= "project_manager"><request class="role_assignment">I’ll give you the pieces with the glue on them…okay?</request></role></p2>
+<p2><role class="actor" class11="collaborator">Here you go</role></p2>
+<p5><role class="actor">P5<response class="role_rejection">I’m doing something</response></role></p5>
+<p2><role class="audience"><response class="ethics" "challenge">oh on your phone during class.</response></role></p2> 
+<p5><role class="actor" "unemployed"><response class="justification">I’m getting myself a job</response></role></p5>
+<p2><role class="actor" "employed">guess what I’m doing this summer as a job—mowing lawns at bryant. [see other transcript part 2]</role></p2>
+<p2><role class="actor"class8= "insider">Yea, I have an in there.</role> </p2>
+<p2><role class="actor" class8="insider"class11="collaborator" class5="project_manager"><request class="role_change">can you like help.</request></role></p2> 
+<p5><role class="actor"class11="collaborator"><affect>omg</affect>, <explanation class="justification" "performance">I’ve been doing stuff the whole time.</explanation></role></p5>  
+<p2><role class="actor" class11="collaborator" class5="evaluator"><response class="compare" "quantitative">you did one.</response></role></p2> 
+<p5><role class="audience"><response class="challenge" "quantitative">I did all these.</response> <q>Is it a competition?</q></role></p5>
+<p2><role class="audience"><response class="role_exchange">you just made it one.</response></role></p2> 
+</dialogue>
+
+<dialogue class="xgroup" "gossip"> 
+<p2><role class="audience" class2="student" >He literally goes to the bathroom so long.</role></p2> 
+<p2><role class="audience" class2="student" >In history he goes so long.</role></p2> 
+<p2><role class="audience" class2="student" >In math he goes so long.</role></p2> 
+</dialogue>
+    
+<p2><role class="audience" class10="fan"class8= "outsider"><affect>I found a song that I love.</affect> I told you to listen to it but I’m assuming you didn’t. Put on <song>we don’t care by Kanye.</song> 
+ <action class="singing">“once upon a time not long ago, I was….”</action></role></p2>
+    
+<p2><role class="actor" class2="student" class5= "project_manager">We finished one side.</role></p2>
+    
+<P10><role class="audience" class2="teacher"><response class="feedback">omg, that so amazing. It looks amazing. Is this glued together here. Awesome, great job.</response></role></P10> 
+
+<p5><role class="actor" class2="student"><q>should we cut these off.</q></role></p5> 
+<P10><role class="actor"class3="engineer"><response>I wouldn’t do that until the end when your bridge isn’t standing up straight. <explanation>Cause what you want is to trim them all so your bridge is flat</explanation>.</response></role></P10> 
+<P2><role class="audience" "fan"><q>isn’t this good.</q> </role></P2>
+<p5><role class="audience"><response>I know this song.</response> </role></p5>
+<P2><role class="actor"class5="evaluator"class5="evaluator">There aren’t enough pieces. We don’t have enough pieces.</role></P2> 
+<p5><role class="actor"class5= "problem_solver" class11="collaborator"><q class="clarification">what do you mean</q></role></p5>
+<P2><role class="actor"><explanation>we’re missing the one</explanation></role></P2>.
+
+<dialogue class="music" "xgroup"> 
+<P2><role class="actor" class10="fan"><request>can we put on <song>once upon a time</song></request></role></P2> 
+<p5><role class="actor" class10="fan"> yea.</role></p5> 
+<P2><role class="actor" class10="fan" class8="insider">we have a request after this</role></P2> 
+<P01><role class="actor"class10="dj" >yea</role></P01>
+<P2><role class="actor" class10="fan"><request>can you put on <song>once upon a time</song>.</request></role></P2> 
+<P01><role class="actor"class10="dj" >that’s next.</role></P01> 
+
+<p5><role class="audience" class5="evaluator"> <q>why are you wearing camo</q></role></p5>
+<P2><role class="actor"class3="athlete"><explanation>it’s spirit day for <xdomain>basketball</xdomain></explanation>.</role></P2> 
+<p5><role class="actor">P5  <affect class="resources">I really hate wood glue.</affect> </role></p5>
+<P10><role class="audience" class2="teacher"><response class="sarcasm">that’s really going to mess with your career goal of becoming a carpenter.</response></role></P10> 
+
+<P2><role class="audience" class10="fan">everbody listen to this song. It’s hilarious 
+    <action class="singing">“I want your money, I want more money, I want your money, I want your money”</action></role></P2>
+<p8><role class="audience"> <response class="sarcasm">wow these are some original lyrics.</response></role></p8> 
+<P2><role class="audience" class10="fan"><action class="singing">“…once upon a time not long ago,  I was ho. I admitting it …”</action></role></P2>
+<P2><role class="audience" class10="fan">just wait.</role></P2> 
+
+<P2><role class="actor"><response class="sarcasm">I love when I glue the wrong side.</response></role></P2> 
+<p5><role class="actor"class11="collaborator"> <q>where do these go</q></role></p5>
+<P2><role class="audience"class11="collaborator">“engineer in life”</role></P2>
+<P2><role class="audience" class10="fan" class10="dj" ><request class="rolechange">put on location. Oh you should put on paper planes.</request></role></P2> 
+
+<p5><role class="actor" class8="insider"> What did you bring for lunch </role></p5>
+<P2><role class="actor">rice cake, celery, and favorite granola bar
+<q><xdomain>Do we have history third period?</xdomain></q></role></P2> 
+<p5><role class="actor"> I don’t know.</role></p5> 
+<p5><role class="actor" > let me just finish this one.</role></p5> 
+<P2><role class="actor" class8="insider" class2="student">no, do you want to be done early so we have to do other people’s work.</role></P2> 
+</dialogue>
+    
+</perspective2>
+</section>
+<section class="session_4">
+<perspective2 class="perspective">
+<dialogue class=resources>
+    <P2><role class="actor"class8= "insider"  >From past projects, like not as much as you think</role></P2>
+    <P7><role class="audience" "secondary"class8= "outsider"  class3="engineer"><q class="role_id">You like to just build things?</q></role></P7> 
+    <P2><role class="actor"  >I have silver spray paint, and like white and purple.</role></P2> 
+    <P10><role class="actor"class8= "insider" class5="project_manager"><response>I don’t know if I want to buy spray paint.</response></role> </P10></dialogue>
+<dialogue class="relational" "in-group">
+<P2><role class="actor">I had three dinners last night. I had a bowl of rice krispies with whipped cream on top.</role></P2> 
+<p5><role class="audience"><response class="joint"> its not  a dinner. It’s really good but not a dinner</response></role></p5>
+<P2><role class="actor">and then a grilled cheese, a carnation, and two cheesesticks and a taco at 11:30</role></P2>
+<P2><role class="actor">Also  I have a really good idea for this weekend and I really don’t want to go to New York <br>I really don’t want to go to New York.</role></P2> 
+<p5><role class="audience"><q>P5  your going to new York</q></role></p5>
+<P2><role class="actor"><response>Julia wants to see tanner.</response></role></P2> 
+<p5><role class="audience"><response>P5  can’t help.</response></role></p5> 
+<P2><role class="actor" class8="outsider"><q>were you guys all<affect>mad</affect> at me today?</q></role></P2> .
+<p5><role class="audience" class8="insider"><response>P5  no. I was just <affect>stressed</affect>.</response></role></p5> 
+<P2><role class="audience"class8= "outsider"><response class=perspectivechange>that’s what I thought but then I walked by all three of you today and none of you said hi, so I was like I’ll pretend that just didn’t happen.</response></role> </P2></dialogue>
+<dialogue class="guided">
+<P10><role class="actor">ready owen, we’re going to be doing…</role></P10>
+<p8><role class="audience"  ><response class="role_refusal""purpose"> I don’t want to</response></role></p8> 
+<P10><role class="actor"class4="expert" class2="teacher" class5="project_manager"><performance>If you feel like youre going to be bad at doing</performance>, this is a good time to practice. <explanation class="justification">this is <performance>low stakes</performance></explanation>.</role></P10>
+<p8><role class="audience"> I shouldn’t glue them,</role></p8>
+<P10><role class="actor"><q>why not.</q></role> </P10>
+<p8><role class="audience"  ><response class="role_refusal""purpose"> I don’t want to.</response></role></p8> 
+<P10><role class="actor"class4="expert" class2="teacher" class5="project_manager">If you feel like you can’t do this, this is good practice, because the consequences for messing up…there’s like no consequenes for messing up. it’s very low stakes, please try to do this. You’ll be fine.</role></P10>  
+</dialogue>
+<dialogue> 
+<P2><role class="actor" class5= "project_manager">we’re done.</role> </P2>
+<P10><role class="audience"class4="expert" >woah really.</role> </P10>
+<P2><role class="actor" class5= "project_manager"><response class="perspectivechange">we’ll with this side.</response></role> </P2>
+</dialogue>
+<dialogue class="joint_creation"> 
+<p5><role class="audience"class5="evaluator"> this one doesn’t quite stand up</role></p5>
+<P2><role class="audience"class5= "project_manager">maybe we should ask what our next step is</role></P2>
+
+<dialogue class=interlude>[body comparison conversation]</dialogue>
+<p5><role class="actor"class5= "problem_solver"><q>P5  What is our next step</q></role></p5>
+    
+<P10><role class="audience"class4="expert"class3="engineer"><response class="evaluation" "strategy""explanation">okay, so your <engineering>floor beams </engineering>are not in yet.
+Put your top on first, because you can’t make your bridge any wider than the top. But then you might need to trim the <engineering>floor beams</engineering>. So like this group did a great job at trimming the ends and evening them out.</response></role> </P10> 
+<P2><role class="audience" class5="evaluator"class5= "project_manager">We have an issue with where are dotted … look this one’s halfway on the dotted line. <q>So like which way do I fold it</q>.</role></P2> 
+<P2><role class="actor"class5= "problem_solver"><action>[tries to fold]</action> <q>can I use like a ruler.</q></role> </P2>
+<P2><role class="actor"class3="engineer" class11="modeler"><action class="model">[putting together 3d]</action></role></P2> 
+<P2><role class="audience" class5="evaluator"class3="engineer"><evaluation class="comparison">model—this one is like really good.</evaluation> <q>Who made this bridge.</q> It lines up perfectly</role> </P2>
+<p2> <role class="actor"class5= "project_manager">Let’s start gluing.</role></p2>
+<p5><role class="actor"   class11="collaborator"><request>P5  want to hold them and I’ll put glue or do you want me to hold them and you put glue?</request></role></p5> 
+<P2><role class="actor"class5= "project_manager" "stabilizer"><response>I’ll hold them</response></role></P2>
+<p5><role class="actor" class11="collaborator" "gluing"><response>P5  I’ll put glue.</response></role></p5> 
+
+<p5> <role class="actor"><action>Puts glue on top while</action></role></p5> 
+<p2><role class="actor"><action>holds.</action></role></p2>
+ <p5><role class="actor"><action>grabs one side of top and</action></role></p5> 
+<P2>t<role class="actor"><action>he other side—both holding the three parts at the end to align the top.</action></role> </P2>
+<P2><role class="actor"class5= "project_manager">tells P5 to do one link by link</role> </P2>
+<p5><role class="actor" class5="evaluator"> Its moving, its not going to stay.</role></p5> 
+<p5><role class="audience"class5="evaluator"> you’re pulling it.</role></p5>
+<p8><role class="audience" "secondary"class8= "outsider">P8  <evaluation>oh my god, you guys <performance>botched</performance> it big time</evaluation></role> </p8>
+<P01><role class="actor">[see other—go do your own stuff]</role></P01>
+<p5><role class="audience"class5="evaluator" class11="collaborator"><response class="joint"> no this isn’t staying, and I just don’t understand the plan.</response></role></p5> 
+<P2><role class="actor" class5="project_manager"><response>we’re putting a gusset plate there.</response></role> </P2>
+<p5><role class="actor"class5= "project_manager"><request class="role_exchange"> okay, you do it, I’ll hold it.</request></role></p5> 
+<P2><role class="audience" class5="evaluator" class4="expert">I told you, it’s not long enough.</role> </P2>
+<p5><role class="actor"class5= "problem_solver">Well just glue on the ends</role></p5> 
+<P2><role class="audience"class8= "insider"><q>how <affect>mad</affect> at me are you right now.</q></role> </P2>
+<p5> <role class="actor"class8= "insider"><response><affect>so mad</affect></response></role></p5>. 
+<P2><role class="audience" class5="evaluator"  >hey look at this, we’re all set. We’re literally all set. </role></P2>
+<P2><role class="audience" class11="collaborator" class3="engineer">I like don’t know what to do now. Cause I <affect>lied</affect> and there aren’t more <engineering>gusset plates</engineering>.</role> </P2>
+<P2><role class="actor" class5="problem_solver" class3="engineer">Can we like add extra pieces like <engineering>gusset plates</engineering>.</role> </P2>
+<P10><role class="audience" class4="expert"class3="engineer" class2="teacher">so that’s what this group did [model]. But it doesn’t make your bridge stronger</role></P10>
+<P2><role class="audience" "designer">just prettier.</role></P2> 
+<P10><role class="actor"class3="engineer" class2="teacher"><q class="guided">Why wouldn't you use it?</q></role></P10>
+<p5><role class="actor"class3="engineer"class5= "project_manager">P5  <engineering>its way more expensive.</engineering></role></p5> 
+<P2><role class="actor"class3="engineer" class11="modeler">does it really add more if the bridge is already<engineering>stable</engineering></role></P2>
+<P10><role class="actor"class3="engineer" class2="teacher"><response class="application">also, more than that they’re just cheap pieces of metals so you’re actually adding a <engineering>load</engineering> to the bridge. So just so you know no one would ever do that. </response></role></P10>
+</dialogue>
+
+</perspective2>
+<Perspective01 class="perspective">
+<P01><role class="actor" class11="collaborator"><q>alright what are we doing today?</q></role></P01> 
+<p3><role class="actor"class5= "project_manager"><response> cutting the top piece out</response> <action>[P01 and P5 working]</action></role></p3>
+<P01><role class="actor"class4="expert"class8= "insider">drew, drew <directive>don’t <performance><affect>ruin</affect></performance> it.</directive></role></P01> 
+<p3><role class="audience"class4="expert" class8="insider"> we got this…you should have just stayed skiing.</role></p3> 
+<p4><role class="audience" class8="outsider"> <response><affect>I wish</affect></response>.</role> </p4>
+<p4> <role class="actor"class4="novice"><q>Does that get glued on top of this?</q></role> </p4>
+<P01><role class="actor"class4="expert"><response>no we have to double it.</response></role> </P01>
+<p3><role class="actor"class4="expert"><response> you have to double that one.</response></role></p3> 
+<p4><role class="actor"class4="novice"> <q>I have to what?</q></role></p4> 
+<p3><role class="actor" class5="project_manager"class8= "insider"> The deal was that andy was going to do it. But I mean since your back…</role></p3>
+<P01><role class="audience"class11="collaborator">I mean I’ll do it.</role></P01> 
+<p4><role class="actor"> <request class="collaborative" class2= "role_refusal">Why don’t we just do it together?</request></role></p4> 
+<p4><role class="actor"class4="novice"> <q>wait what do we have to make again?</q> We just double it…<q>we just have to do this thing again?</q></role> </p4>
+<p3><role class="audience"class4="expert"><response> no look,</response></role></p3> 
+<p4><role class="actor"class4="novice"><q> isn’t this that</q></role></p4>
+<P3><role class="audience"class4="expert"><response>no that’s like the top. I wouldn’t even mess with that.</response></role></P3> 
+<P01><role class="audience"class4="expert"><response>no that’s like the top. I wouldn’t even mess with that.</response></role></P01> 
+<p4><role class="actor"class2="student"> oh that goes like there.</role></p4> 
+<p3><role class="audience"class4="expert"><response> I wouldn’t even mess with it. I wouldn’t even mess with it.</response></role></p3> 
+<P01><role class="actor"class4="expert"><response>just leave it there.</response></role></P01> 
+<p4><role class="actor"class4="novice"> I’m just putting it there so its not in the way.</role></p4> 
+<p3><role class="actor"class4="expert"><response> I know but it is in the way cause we need to do this side.</response></role></p3> 
+<P01><role class="audience" class5="evaluator"><q>do we only have one long one for this</q>…I don’t know why</role></P01>
+<p3><role class="actor"class5="evaluator"> <q>did one of ours get taken?</q></role></p3>
+<p4><role class="actor" class5="problem_solver"  > <q class="role_exchange">want me to cut one?</q></role></p4>  
+<p3><role class="actor" class5="project_manager"> <response class="role_acceptance">yea. Cut another long one.</response></role></p3> 
+<p4><role class="actor" class2="student"> <q>how does my diary look?</q></role></p4>
+<P10><role class="audience" class2="teacher"><response>It looks great. I think my favorite entry is the part where you say, “<performance>today we weren’t super productive at the beginning,</performance> but towards the end we cut a lot of tubes up and caught up closely to anna, ryan, and chloe.”  <performance>It’s not a competition.</performance></response></role></P10> 
+<P01><role class="actor" class5="project_manager"><request class="role_assignment">drew can you cut another piece please.</request></role></P01> 
+<p4><role class="audience" class5="project_manager"><request class="role_exchange"> can you cut one.</request></role></p4> 
+<P01><role class="audience" class5="project_manager"><directive class="role_exchange_refusal">no you need to. Lets go</directive>.</role></P01> 
+<p4><role class="actor" class5="project_manager"> let’s do the long ones first</role> </p4>
+<P01><role class="actor"class11="collaborator"  ><q>this goes like this, right?</q></role></P01> 
+<p3><role class="audience"class4="expert" class11="collaborator"><response> yea.</response></role></p3> 
+<p4><role class="actor"class4="novice"><request> wait can I see the size of it?</request></role></p4> 
+<p3><role class="audience"class4="expert"><response> just look at this <action>[points to instructions]</action></response></role></p3>
+<p4><role class="actor"class4="novice"><q> what’s it called?</q></role></p4>
+<p3><role class="audience"> <response>I don’t know, <engineering>bottom chords</engineering> probably.</response></role> </p3>
+<P01><role class="actor" class5="problem_solver"><q>what are these called again, <engineering>bottom chords</engineering></q></role></P01>
+<P10><role class="audience"class4="expert"><response>yea, <engineering>bottom chords.</engineering></response></role></P10> 
+
+<p8><role class="audience" class4="novice" "consumer"> <q class="comparison">Did smeetie <performance>fail</performance>?</q></role></p8> 
+<P10><role class="actor" class2="teacher" class5="evaluator"><performance>No, engineering is a really hard class to fail because it is project based and your working together.</performance></role></P10>
+<p8><role class="audience" class4="novice" "consumer">P8  <q class="comparison"><performance>how close did he get?</performance></q></role></p8> 
+<p3><role class="audience" "consumer">P3  <q class="comparison"><performance>how close did he get?</performance></q></role></p3>
+<P10><role class="audience" class2="teacher"   class5="evaluator"><performance>he was not…I think he’s a very nice person, very sincere.</performance></role></P10> 
+<P01><role class="audience"  >yea he’s pretty quiet.</role></P01> 
+<p4><role class="actor"class2="student" class4="novice"> <q>What’s it called a <engineering>floor beam</engineering> or something,</q></role></p4> 
+<p3><role class="audience"class4="expert"class3="engineer">P3  a <engineering>long beam.</engineering></role></p3> 
+<p4><role class="actor"class4="novice"> 30 cm. I don’t know which one is <engineering>centimeters</engineering> on this…<affect>oh god</affect>, I don’t know what to do.</role></p4> 
+<P10><role class="audience" class2="teacher">It goes by 0 to 60 and up by twos which is kind of tricky.These are the centimeters one,</role></P10> 
+<p4><role class="actor"class2="student"> and these are <engineering>inches</engineering>?</role></p4> 
+<P10><role class="audience" class2="teacher">It’s a tricky unit; I would get another ruler. </role></P10>
+<p4>P<role class="audience" class4="novice">4:I just like the look of that one.</role></p4> 
+<P10><role class="actor"class2="student"><skill>No, I know…I wish I were better at using it.</skill></role></P10> 
+<p4><role class="audience"class4="novice"> <skill>I <affect>feel</affect> like these old ones are the way to do it though.</skill></role></p4> 
+<P10><role class="actor" class2="teacher"><application>have you ever seen or sat at those giant drafting tables that they have architects use.</application>.</role></P10>
+<p4><role class="audience">yea.</role></p4> 
+<p3><role class="audience">yea.</role></p3> 
+<P10><role class="actor" class2="teacher">that’s like the real …they have giant rulers.</role></P10> 
+<p4><role class="audience"class2="student"> the thing with the big lights and stuff too</role></p4>
+<P10><role class="audience" class2="teacher">you mean are they lit up from underneath…yea, yea.</role></P10> 
+<P01><role class="actor"class2="student"  ><q>can I just do this.</q></role></P01> 
+<p3><role class="audience"class4="expert" class11="collaborator"><response> although I think that one goes here.</response></role> </p3>
+<P01><role class="audience"class2="student"><response>yea, yea.</response></role></P01> 
+<p4><role class="audience" class4="novice"> 30 cm, it doesn’t fit here.</role></p4> 
+<p3><role class="audience"class4="expert"><response> you have to do it at the diagonal.</response></role> </p3>
+<p4><role class="actor" class5="problem_solver"><action>[goes and gets a cutting mat for the exacto because he cut the desk]</action></role></p4>
+<p4><role class="actor" class10="dj"><action>puts music on.</action></role></p4>
+<P01><role class="actor" class10="dj"><q>Are you going to put music on?</q></role></P01>
+<p4><role class="actor"class4="novice"> no you can play it.</role></p4> 
+<P2><role class="audience" class10="fan"><q>Oh wait is this…</q></role></P2>
+<P01><role class="actor"class10="dj" ><response>tunnel vision.</response></role></P01> 
+<P01><role class="actor" ><action>[cutting, placing, gluing]</action></role></P01>
+<p4><role class="audience"> Oh youre doing the <engineering>diagonals</engineering> here?</role></p4>
+<p3><role class="audience"class4="expert"> <q>what were you just about to do</q></role></p3>
+<p4><role class="actor"> <response>I was going to put the <engineering>diagonals</engineering> here.</response></role></p4> 
+<p3><role class="audience"class4="expert"><response> oh</response></role></p3>
+<p4><role class="actor"class4="novice"><response> well this is the first time I’ve done this.</response></role></p4> 
+<p3><role class="audience"class4="expert"><response> oh yea, you didn’t work here with us.</response></role></p3> 
+<p4><role class="audience" class5="evaluator"class8= "outsider"> <performance><individual>You</individual> didn’t get that much done.</performance></role></p4> 
+<P01><role class="audience" class5="evaluator"class8= "insider"><performance>no cause this stuff is just easier to do with two people.</performance></role></P01> 
+<p3><role class="audience" class5="evaluator"class8= "insider"><response> no, yea</response></role></p3>. 
+<P01><role class="audience" class5="evaluator" class11="collaborator">If I was gone and you were here, you still would have had the same thing</role></P01>
+<p4><role class="audience" class5="evaluator"class8= "outsider"> <evaluation class="performance">no, I’m saying you guys got nothing done. You were very unproductive.</evaluation> <affect>Sorry,  I was just kind of disappointed.</affect></role></p4> 
+<p4><role class="actor"class4="novice"><q> andy these go here, right?</q></role></p4>
+<P01><role class="audience"class4="expert"><response>nope.</response></role></P01> 
+<p3><role class="audience" class4="expert">P3  you put glue on both sides</role></p3>
+<p4><role class="actor"class4="novice"><response>P4  I didn’t mean to…it just kind of tapered on the other side.</response></role></p4> 
+<p3><role class="audience"class4="expert"><request>P3  can you just not put any glue.</request></role> </p3>
+<p4><role class="actor"class4="novice"><action> puts more glue</action></role></p4>
+<P01>  <role class="audience" class5="project_manager"><directive>stop, stop stop. Don’t put any more glue…</directive></role></P01>
+<p3> <role class="audience" class5="project_manager"><directive>stop,stop stop. Don’t put any more glue…</directive></role></p3>
+<p3><role class="audience" class8="insider"> drew, go back to skiing.</role> </p3>
+<p4><role class="actor" class4="novice"class8= "outsider">P4  I wish…alright here, I only put glue on one side.</role> </p4>
+<P01><role class="actor"class2="student">right here right.</role></P01> 
+<p4><role class="audience"class4="novice">P4  I think we have a couple of extra of these</role></p4> (14:50)
+<P01> <role class="actor"class8= "insider"><directive><indidivual>dude go work on your own…</indidivual></directive></role></P01>
+<p8><role class="audience" "secondary">P8  <directive><indidivual><affect>mind your own business</affect></indidivual></directive>.</role></p8> 
+
+<p3><role class="audience" class4="expert"class5="evaluator"> we messed this up.</role></p3> 
+<p4><role class="audience" class4="novice"> <q>how did we mess this up?</q></role></p4>
+<p3><role class="audience" class4="expert"> We didn’t put these here…<engineering><action>[points to wrong side of the dotted line on the template]</action></engineering></role></p3>
+<P01><role class="audience" class5="evaluator"><action>goes and looks at other groups models]</action></role></P01>
+<P01><role class="audience" class5="evaluator"><q class="xgroup">wait why do you still have pieces left</q></role></P01>
+<P2><role class="actor"><response>we’re not done.</response></role></P2> 
+<p4><role class="actor">It goes like between here and then down (<action>models 3d structure</action></role></p4>
+<p3><role class="actor"  ><action>[p3 is using a toothpick again]</action></role></p3>
+<P01><role class="audience"><action>Evaluates pieces as a group:</action></role></P01>
+<P01><role class="audience"class5= "problem_solver">we’re gonna have to cut this too, cause its so uneven on the ground</role></P01>
+<p3><role class="audience" class5="evaluator">its actually not that bad</role></p3>. 
+<P01><role class="audience" class5="evaluator">its pretty bad.</role></P01> 
+<p3><role class="actor"class5= "problem_solver">we can put a piece of paper over imperfect gaps. The other group did it</role></p3>
+<P01><role class="audience"class3="engineer">the other group did not do that.</role></P01>
+
+    
+    </Perspective01>
+</section>
+        
+  <!--  
+  <div class="row">
+    <div class="col-sm-3 sidenav">
+      <h4>Review The Literature </h4>
+      <ul class="navbar-nav">
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="#cognitive">Cognitive Research</a></li>
+        <li><a href="#curriculum">Curriculum Design</a></li>
+        <li><a href="#makerspacenews">Makerspace News</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+
+    <section id="cognitive">  
+        <h4><small>Systems Reasoning</small></h4>
+      <hr>
+      <h2>Causal Models</h2>
+      <h5><span class="label label-danger">Linear Causality</span></h5>
+      <p>FPO</p>
+      <br><br></section>
+      
+     <section id="curriculum"> 
+         <h4><small>Curriculum Design</small></h4>
+      <hr>
+      <h2>Mapping Curriculum to Standards </h2>
+      <h5><span class="label label-success">NGSS</span></h5>
+      <p>FPO</p></section>
+        
+    <section id="makerspacenews">
+        <h4><small>Makerspace News</small></h4>
+      <hr>
+      <h2>FPO</h2>
+      <h5><span class="label label-success">FPO</span></h5>
+      <p>FPO</p>
+        
+      <hr></section>
+<p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="assets/profile_pic.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+          <p>FPO</p>
+          <br>
+        </div>
+          </div>
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+        
+
+
+
+
+    -->
+    </main>
+</body>
+
+    
+</html>
