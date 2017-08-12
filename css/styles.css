@@ -5,11 +5,20 @@ body {
     font-family: 'Open Sans', sans-serif;;
     font-size: 18px;
 }
+svg {
+    background-color:rgba(240, 248, 255, .4);
+}
 
 h1,h2,h3 {
     font-family:'open sans', sans-serif;
     font-size: 30px
         
+}
+h1.graph {
+    font-family:'open sans', sans-serif;
+    font-size: 30px;
+    color:slategray;
+    text-align: center; 
 }
 h4 {
     font-family:'open sans', sans-serif;
@@ -35,7 +44,20 @@ nav {
 nav img{
     width:40px;
 }
+table {
+    margin-bottom: 50px;
+}
 
+th {
+    border-bottom: 1px solid #121248;
+    text-align:center;
+}
+tr {
+    text-align:center;
+}
+.last {
+border-bottom: 1px solid #121248; 
+}
 main {
     margin:100px 0px 20px;
     padding: 0px;
@@ -43,6 +65,7 @@ main {
 .col-md-8 {
     margin-left: 20px;
 }
+
 
 figcaption {
     font-size:14px;
@@ -52,6 +75,12 @@ figcaption {
 }
 button {
     margin:3px;
+}
+button#p_two {
+    position:relative;
+}
+button#p_one {
+    position:relative;
 }
 /* carousel styles*/
 
@@ -65,7 +94,7 @@ height:100%;
 }
 .carousel-caption {
     background-color:rgba(0,0,0,.5);
-    padding: 2px;
+    padding: 5px;
     text-transform:capitalize;
 }
 caption-title {
@@ -73,7 +102,38 @@ caption-title {
     font-size:8px;
     font-style: bold;
     text-transform:uppercase;
+    
 }
+/* svg chart styles */
+chart-title {
+    font-family: "open sans";
+    font-size:12px;
+    font-style: bold;
+    text-transform:uppercase;
+   
+}
+
+.chart-legend {font-family:'open sans', sans-serif;
+    font-size: 12px;
+    text-transform: capitalize
+    
+
+}
+.col-md-9 {
+    margin-left: 100px;
+}
+span.novice{
+    color: #087b9d;
+}
+span.student {
+    color: #55d5ed;
+}
+span.engineer {color: #a733b1;}
+span.expert{color: #221abf;}
+span.teacher{color: rgb(221, 152, 22);}
+/* svg chart styles */
+
+
 video-title {
     font-family: "open sans";
     font-size:12px;
@@ -133,7 +193,7 @@ height:20%;
 }
 
 legend {
-    font-family: "open sans", sans-serif;;
+    font-family: "open sans", sans-serif;
     font-size: 16px;
 }
 .splash {
@@ -256,3 +316,7 @@ form {
      font-family:'open sans', sans-serif;
     font-size: 14px;
 }
+
+
+}
+
