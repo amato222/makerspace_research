@@ -14,12 +14,7 @@ h1,h2,h3 {
     font-size: 30px
         
 }
-h1.graph {
-    font-family:'open sans', sans-serif;
-    font-size: 30px;
-    color:slategray;
-    text-align: center; 
-}
+
 h4 {
     font-family:'open sans', sans-serif;
     font-size: 14px;
@@ -105,6 +100,15 @@ caption-title {
     
 }
 /* svg chart styles */
+
+h1.graph {
+    font-family:'open sans', sans-serif;
+    font-size: 30px;
+    color:slategray;
+    text-align: center; 
+    margin-top: 20px;
+}
+
 chart-title {
     font-family: "open sans";
     font-size:12px;
